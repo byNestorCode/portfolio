@@ -1,6 +1,13 @@
 import Image from "next/image";
+import Head from 'next/head';
 
 export default function Home() {
+  <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[#121212]">
+    
+  </main>
+}
+
+/* export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -110,4 +117,50 @@ export default function Home() {
       </div>
     </main>
   );
-}
+} */
+
+  // app/page.tsx
+/* export default function Home() {
+  return (
+    <>
+      <Head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+      </Head>
+      <div className={styles.container}>
+        <div className={styles.container}>
+        <header className={styles.header}>
+          <h1>Mi Portafolio</h1>
+          <p>Desarrollador Web y Diseñador UI/UX</p>
+        </header>
+          
+        <section className={styles.section}>
+          <h2>Sobre Mí</h2>
+          <p>Hola, soy un desarrollador web con experiencia en la creación de aplicaciones modernas y eficientes. Me especializo en React, Next.js y tecnologías relacionadas.</p>
+          <Image src="/rocketmx.png" alt="Mi foto" width={150} height={150} />
+        </section>
+
+          <section className={styles.section}>
+            <h2>Proyectos</h2>
+            <p>Aquí puedes ver algunos de mis proyectos recientes:</p>
+            <ul>
+              <li>Proyecto 1: Descripción del proyecto 1.</li>
+              <li>Proyecto 2: Descripción del proyecto 2.</li>
+              <li>Proyecto 3: Descripción del proyecto 3.</li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través del siguiente email: <a href="mailto:miemail@example.com">miemail@example.com</a></p>
+          </section>
+
+          <footer className={styles.footer}>
+            <p>&copy; 2024 Mi Nombre. Todos los derechos reservados.</p>
+          </footer>
+        </div>
+      </div>
+    </>
+    
+  );
+} */
+
