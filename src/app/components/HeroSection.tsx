@@ -22,6 +22,8 @@ const HeroSection = () => {
                                     'DevSecOps',
                                     1000,
                                     'Robotics God',
+                                    1000,
+                                    'An 🧠 AI?',
                                     1000
                                 ]}
                                 wrapper="span"
