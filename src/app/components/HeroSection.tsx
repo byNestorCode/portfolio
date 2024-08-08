@@ -19,9 +19,9 @@ const HeroSection = () => {
                                     1000,
                                     'Fullstack Developer',
                                     1000,
-                                    'DevSecOps',
+                                    '⚙️ DevSecOps',
                                     1000,
-                                    'Robotics God',
+                                    'Robotics 🤖 God',
                                     1000,
                                     'An 🧠 AI?',
                                     1000
