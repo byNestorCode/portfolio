@@ -58,7 +58,7 @@ const TAB_DATA = [
 ]
 
 const AboutSection: React.FC = () => {
-    const [tab, setTab] = useState<string>('skills');
+    const [tab, setTab] = useState<string>('experience');
     const [isPending, startTransition] = useTransition();
 
     const handleTabChange = (id: string) => {
@@ -88,6 +88,10 @@ const AboutSection: React.FC = () => {
                         delectus voluptatum mollitia dolor quo amet ad. Minima ea labore atque.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
+                    <TabButton selectTab={() => handleTabChange('experience')} active={tab === 'experience'}>
+                            {" "}
+                            Experience{" "}
+                        </TabButton>    
                         <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>
                             {" "}
                             Skills{" "}
@@ -100,10 +104,6 @@ const AboutSection: React.FC = () => {
                             {" "}
                             Certifications{" "}
                         </TabButton>
-                        <TabButton selectTab={() => handleTabChange('experience')} active={tab === 'experience'}>
-                            {" "}
-                            Experience{" "}
-                        </TabButton>    
                     </div>
                     <div className="mt-8">{TAB_DATA.find((t) => t.id === tab)?.content}</div>
                 </div>
