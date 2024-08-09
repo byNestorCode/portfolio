@@ -6,7 +6,7 @@ import AboutSection from './components/AboutSection';
 import { Metadata } from 'next';
 
 const globalMetadata: Metadata = {
-  title: 'Mi Sitio Web',
+  title: 'Mi portfolio',
   description: 'Descripción de mi sitio web',
   robots: 'index, follow',
   openGraph: {
