@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from './components/AboutSection';
 import { Metadata } from 'next';
+import ProjectSection from './components/ProjectSection';
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000/'),
@@ -34,6 +35,7 @@ export default function Home() {
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
         <AboutSection />
+        <ProjectSection />
       </div>
     </main>
   );
