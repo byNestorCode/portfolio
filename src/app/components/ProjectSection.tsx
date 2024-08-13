@@ -21,6 +21,15 @@ const ProjectsData = [
         tag: ["All", "Desktop"],
         git: "https://github.com/byNestorCode",
         site: "/",
+    },
+    {
+        id: 2,
+        title: "React Portfolio Website",
+        description: "Project Tree description",
+        image: "/images/projects/3.png",
+        tag: ["All", "Desktop"],
+        git: "https://github.com/byNestorCode",
+        site: "/",
     }
 ]
 
