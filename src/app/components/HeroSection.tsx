@@ -18,7 +18,7 @@ const HeroSection = () => {
                                 sequence={[
                                     'Néstor',
                                     1000,
-                                    'Fullstack Developer',
+                                    'Fullstack Developer 🔃',
                                     1000,
                                     '⚙️ DevSecOps',
                                     1000,
