@@ -81,11 +81,7 @@ const AboutSection: React.FC = () => {
                         About me
                     </h2>
                     <p className='text-base lg:text-lg'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nemo, 
-                        similique deserunt earum et delectus distinctio quo asperiores fuga! 
-                        Harum itaque doloremque molestiae porro laboriosam, id error vero impedit dicta 
-                        assumenda provident reprehenderit odio reiciendis saepe obcaecati quod magnam 
-                        delectus voluptatum mollitia dolor quo amet ad. Minima ea labore atque.
+                    I am a young technology enthusiast and I always ask myself: how does it work? In my mind I have always taken it apart to find out how it works. I love a challenge and am constantly looking to learn on a daily basis. DevSecOps by profession and growing data analyst, possibly IA.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                     <TabButton selectTab={() => handleTabChange('experience')} active={tab === 'experience'}>
