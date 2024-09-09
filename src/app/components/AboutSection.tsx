@@ -81,7 +81,7 @@ const AboutSection: React.FC = () => {
                         About me
                     </h2>
                     <p className='text-base lg:text-lg'>
-                    I am a young technology enthusiast and I always ask myself: how does it work? In my mind I have always taken it apart to find out how it works. I love a challenge and am constantly looking to learn on a daily basis. DevSecOps by profession and growing data analyst, possibly an IA?.
+                        I am a young technology enthusiast and I always ask myself: how does it work? In my mind I have always taken it apart to find out how it works. I love a challenge and am constantly looking to learn on a daily basis. DevSecOps by profession and growing data analyst, possibly an IA?.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                     <TabButton selectTab={() => handleTabChange('experience')} active={tab === 'experience'}>
