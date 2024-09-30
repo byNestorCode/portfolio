@@ -61,7 +61,7 @@ const HeroSection = () => {
                                 cx="253"
                                 cy="253"
                                 r="250"
-                                stroke="#00ff99"
+                                stroke="#4dfdaf"
                                 strokeWidth="8"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
