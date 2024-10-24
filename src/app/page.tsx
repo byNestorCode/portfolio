@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import AboutSection from './components/AboutSection';
 import { Metadata } from 'next';
 import ProjectSection from './components/ProjectSection';
+import {NextUIProvider} from "@nextui-org/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000/'),
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
+    <NextUIProvider>
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
@@ -38,5 +40,6 @@ export default function Home() {
         <ProjectSection />
       </div>
     </main>
+    </NextUIProvider>
   );
 }
