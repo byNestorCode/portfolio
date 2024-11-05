@@ -16,12 +16,9 @@ const TAB_DATA = [
         id: 'skills',
         content: (
             <ul>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>PostgreSQL</li>
-                <li>Sequelize</li>
-                <li>JavaScript</li>
-                <li>React</li>
+                <li>Next JS</li>
+                <li>Django</li>
+                <li>React + Native</li>
             </ul>
         ),
     },
@@ -50,8 +47,9 @@ const TAB_DATA = [
         id: "experience",
         content: (
         <ul>
-            <li>AWS Cloud Practitioner</li>
-            <li>Google Professional Cloud Developer</li>
+            <li>3+ years as DevSecOps</li>
+            <li>1 year as Coordinator in PREP Project </li>
+            <li>1 year as Proyect Manajer in LABSOL</li>
         </ul>
         ),
         }
