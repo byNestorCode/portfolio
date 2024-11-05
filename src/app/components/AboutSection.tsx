@@ -98,7 +98,7 @@ const AboutSection: React.FC = () => {
                         </TabButton>
                         <TabButton selectTab={() => handleTabChange('certifications')} active={tab === 'certifications'}>
                             {" "}
-                            Certifications{" "}
+                            Certs{" "}
                         </TabButton>
                     </div>
                     <div className="mt-8">{TAB_DATA.find((t) => t.id === tab)?.content}</div>
