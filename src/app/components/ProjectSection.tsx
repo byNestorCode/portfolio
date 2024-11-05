@@ -57,7 +57,25 @@ const ProjectsData = [
         tag: ["All", "App"],
         git: "https://github.com/byNestorCode",
         site: "/",
-    }
+    },
+    {
+        id: 7,
+        title: "Repo: Solana Docker Dev",
+        description: "This 🐙 repo is to help devs in their 🪟 windows 💻 development environment.",
+        image: "/images/projects/7-reposolana-min.png",
+        tag: ["All", "Repo"],
+        git: "https://github.com/byNestorCode/solana-docker-dev",
+        site: "/",
+    },
+    {
+        id: 8,
+        title: "Repo: DB Containers",
+        description: "A repository to help you in the creation of a database server with an administrator through phpmyadmin. In the future this repo will manage some types of db.",
+        image: "/images/projects/8-repodb-min.png",
+        tag: ["All", "Repo"],
+        git: "https://github.com/byNestorCode/db-containers",
+        site: "/",
+    },
 ]
 
 const ProjectSection: React.FC = () => {
