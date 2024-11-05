@@ -6,28 +6,55 @@ import ProjectTag from './ProjectTag';
 const ProjectsData = [
     {
         id: 1,
-        title: "React Portfolio Website",
-        description: "Project ONE description",
-        image: "/images/projects/1.png",
+        title: "Infinity Network",
+        description: "In progress...",
+        image: "/images/projects/1-in-min.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
         site: "/",
     },
     {
         id: 2,
-        title: "React Portfolio Website",
-        description: "Project TWO description",
+        title: "Institutional website: IEE",
+        description: "The site allows citizens to access electoral information relevant to the state of Aguascalientes.",
         image: "/images/projects/2.png",
-        tag: ["All", "Desktop"],
+        tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
-        site: "/",
+        site: "https://ieeags.mx/",
     },
     {
         id: 3,
-        title: "React Portfolio Website",
-        description: "Project Tree description",
+        title: "Preliminary Election Results Program (PREP)",
+        description: "The system for capturing and aggregating votes for the Aguascalientes elections",
         image: "/images/projects/3.png",
-        tag: ["All", "Desktop"],
+        tag: ["All", "Web"],
+        git: "https://github.com/byNestorCode",
+        site: "https://prep2024.ieeags.mx/",
+    },
+    {
+        id: 4,
+        title: "Website: Piixan",
+        description: "A GRP-ERP to company Piixan SA de CV based in Odoo",
+        image: "/images/projects/4-piixan-min.png",
+        tag: ["All", "Web"],
+        git: "https://github.com/byNestorCode",
+        site: "https://prep2024.ieeags.mx/",
+    },
+    {
+        id: 5,
+        title: "Website: spina jawelry",
+        description: "An ecommerce based in Odoo",
+        image: "/images/projects/5-spina-min.png",
+        tag: ["All", "Web"],
+        git: "https://github.com/byNestorCode",
+        site: "https:spinajewelry.mx/",
+    },
+    {
+        id: 6,
+        title: "App: PREP Casilla",
+        description: "An app to digitise voting records from polling station locations",
+        image: "/images/projects/6-prepcasilla-min.png",
+        tag: ["All", "App"],
         git: "https://github.com/byNestorCode",
         site: "/",
     }
@@ -67,6 +94,11 @@ const ProjectSection: React.FC = () => {
                     onClick={handleTagChange} 
                     name="Web" 
                     isSelected={tag === 'Web'} 
+                />
+                <ProjectTag 
+                    onClick={handleTagChange} 
+                    name="App" 
+                    isSelected={tag === 'App'} 
                 />
             </div>
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
