@@ -5,6 +5,7 @@ import Link from "next/link";
 import NavLink from './NavLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from "./MenuOverlay";
+import Image from "next/image";
 
 const navLinks = [
     {
@@ -27,7 +28,12 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-40">
             <div className="flex flex-wrap items-center justify-around mx-auto px-4 py-2">
                 <Link href={"/"} className="text-2xl md:text-5xl text-white font-semibold">
-                    🚀
+                    <Image 
+                        src={'/saturno.png'}
+                        width={45}
+                        height={45}
+                        alt='About me'
+                    />
                 </Link>
                 <div className="mobile-menu block md:hidden">
                     {!navbarOpen ? (

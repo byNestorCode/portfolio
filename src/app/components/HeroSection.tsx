@@ -45,7 +45,7 @@ const HeroSection = () => {
                         </div>
                     </div>
                     <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-                        <div className="rounded-full bg-gradient-to-r from-gray-900 to-slate-600 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+                        <div className="rounded-full bg-gradient-to-tl from-sky-900 to-slate-600 w-[250px] h-[250px] lg:w-[375px] lg:h-[375px] relative">
                             <Image
                                 src="/images/nestor.png"
                                 alt="hero image"
@@ -60,7 +60,7 @@ const HeroSection = () => {
                                 <motion.circle 
                                 cx="253"
                                 cy="253"
-                                r="250"
+                                r="248"
                                 stroke="#4dfdaf"
                                 strokeWidth="8"
                                 strokeLinecap="round"
