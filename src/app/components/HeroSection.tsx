@@ -37,7 +37,7 @@ const HeroSection = () => {
                             />
                         </h1>
                         <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                            Lorem  ipsum dolor sit amet consectetur, adipisicing elit. Minus earum ipsa magnam itaque ex amet vitae, aliquid sapiente repudiandae esse.
+                        I'm a software engineer with high knowledge in frameworks like Next js and Django. 
                         </p>
                         <div>
                             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">Hire Me</button>
@@ -45,7 +45,7 @@ const HeroSection = () => {
                         </div>
                     </div>
                     <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-                        <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+                        <div className="rounded-full bg-gradient-to-r from-gray-900 to-slate-600 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
                             <Image
                                 src="/images/nestor.png"
                                 alt="hero image"

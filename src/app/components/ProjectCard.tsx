@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, g
                     </Link>
                 </div>
             </div>
-            <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
+            <div className="text-white rounded-b-xl mt-3 bg-gradient-to-r from-gray-900 to-slate-600 py-6 px-4">
                 <h5 className='text-xl font-semibold mb-2'>{ title }</h5>
                 <p className='text-[#ADB7BE]'>{ description }</p>
             </div>
