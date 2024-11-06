@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <NextUIProvider>
-    <main className="flex min-h-screen flex-col bg-gradient-to-br from-gray-900 to-slate-600">
+    <main className="flex min-h-screen flex-col bg-gradient-to-r from-gray-800 via-slate-700 to-gray-900">
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
