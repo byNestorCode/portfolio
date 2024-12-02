@@ -51,6 +51,15 @@ const ProjectsData = [
     },
     {
         id: 6,
+        title: "Website: Dr. To Dr. Academy",
+        description: "An e-learn plataform based in Odoo",
+        image: "/images/projects/9-drtodracademy.png",
+        tag: ["All", "Web"],
+        git: "https://github.com/byNestorCode",
+        site: "https:spinajewelry.mx/",
+    },
+    {
+        id: 7,
         title: "App: PREP Casilla",
         description: "An app to digitise voting records from polling station locations",
         image: "/images/projects/6-prepcasilla-min.png",
@@ -59,7 +68,7 @@ const ProjectsData = [
         site: "/",
     },
     {
-        id: 7,
+        id: 8,
         title: "Repo: Solana Docker Dev",
         description: "This 🐙 repo is to help devs in their 🪟 windows 💻 development environment.",
         image: "/images/projects/7-reposolana-min.png",
@@ -68,7 +77,7 @@ const ProjectsData = [
         site: "/",
     },
     {
-        id: 8,
+        id: 9,
         title: "Repo: DB Containers",
         description: "A repository to help you in the creation of a database server with an administrator through phpmyadmin. In the future this repo will manage some types of db.",
         image: "/images/projects/8-repodb-min.png",
