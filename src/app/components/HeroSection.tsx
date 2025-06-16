@@ -16,9 +16,11 @@ const HeroSection = () => {
                             <br />
                             <TypeAnimation 
                                 sequence={[
-                                    'Néstor',
+                                    'Néstor 🚀',
                                     1000,
                                     'Fullstack Developer 🔃',
+                                    1000,
+                                    'Project Manager 📊',
                                     1000,
                                     '⚙️ DevSecOps',
                                     1000,
