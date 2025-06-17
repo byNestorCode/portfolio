@@ -3,6 +3,7 @@ import React from "react";
 import Image from 'next/image';
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Orb from "./orb";
 
 const HeroSection = () => {
     return (
@@ -55,7 +56,15 @@ const HeroSection = () => {
                                 height={300}
                                 className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             />
-                            <motion.svg className="absolute top-0 left-0 w-full h-full" 
+                            <div className="" style={{ width: '130%', height: '130%', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', overflow: 'hidden' }}>
+                                <Orb
+                                    hoverIntensity={0.5}
+                                    rotateOnHover={true}
+                                    hue={0}
+                                    forceHoverState={false}
+                                />
+                            </div>
+                            {/* <motion.svg className="absolute top-0 left-0 w-full h-full" 
                             fill="transparent" 
                             viewBox="0 0 506 506"
                             xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +88,7 @@ const HeroSection = () => {
                                     repeatType: "reverse"
                                 }}
                                 />
-                            </motion.svg>
+                            </motion.svg> */}
                         </div>
                     </div>
             </div>
