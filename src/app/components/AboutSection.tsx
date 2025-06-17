@@ -2,6 +2,7 @@
 import React, { useTransition, useState  } from 'react';
 import Image from 'next/image';
 import TabButton from './TabButton';
+import DecryptedText from './Code';
 
 // Define los tipos para los datos de las pestañas
 interface TabData {
@@ -78,9 +79,18 @@ const AboutSection: React.FC = () => {
                     <h2 className='text-4xl font-bold text-white mb-4'>
                         About me
                     </h2>
-                    <p className='text-base lg:text-lg'>
+                    <div style={{ marginTop: '4rem' }}>
+                        <DecryptedText
+                        text="I am a young technology enthusiast and I always ask myself: how does it work? In my mind I have always taken it apart to find out how it works. I love a challenge and am constantly looking to learn on a daily basis. DevSecOps by profession and growing data analyst, possibly an IA?."
+                        animateOn="view"
+                        revealDirection="start"
+                        sequential={true}
+                        speed={10}
+                        />
+                    </div>
+                    {/* <p className='text-base lg:text-lg'>
                         I am a young technology enthusiast and I always ask myself: how does it work? In my mind I have always taken it apart to find out how it works. I love a challenge and am constantly looking to learn on a daily basis. DevSecOps by profession and growing data analyst, possibly an IA?.
-                    </p>
+                    </p> */}
                     <div className="flex flex-row justify-start mt-8">
                     <TabButton selectTab={() => handleTabChange('experience')} active={tab === 'experience'}>
                             {" "}
