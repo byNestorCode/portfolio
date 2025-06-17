@@ -1,6 +1,7 @@
 import React from 'react';
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+import SpotlightCard from './SpotlightCard';
 
 interface ProjectCardProps  {
     imgUrl: string;
@@ -24,10 +25,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, g
                     </Link>
                 </div>
             </div>
-            <div className="text-white rounded-b-xl mt-3 bg-gradient-to-r from-gray-900 to-slate-600 py-6 px-4">
+            <SpotlightCard className="custom-spotlight-card mt-3 rounded-b-xl rounded-t-none" spotlightColor="rgba(0, 229, 255, 0.2)">
                 <h5 className='text-xl font-semibold mb-2'>{ title }</h5>
                 <p className='text-[#ADB7BE]'>{ description }</p>
-            </div>
+            </SpotlightCard>
         </div>
     );
 };
