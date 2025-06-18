@@ -106,6 +106,4 @@ export default function GlassmorphNavbar() {
             </div>
         </>
     );
-
-
 }
