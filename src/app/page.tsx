@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection';
 import { Metadata } from 'next';
 import ProjectSection from './components/ProjectSection';
 import {NextUIProvider} from "@nextui-org/react";
+import GlassmorphNavbar from "./components/GlassmorphNavbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nestorvazquez.mx/'),
@@ -33,8 +34,9 @@ export default function Home() {
   return (
     <NextUIProvider>
     <main className="flex min-h-screen flex-col bg-[url(/images/fondo.svg)] bg-cover">
-      <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      {/* <Navbar /> */}
+      <GlassmorphNavbar />
+      <div className="container mx-auto px-12">
         <HeroSection />
         <AboutSection />
         <ProjectSection />
