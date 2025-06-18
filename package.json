@@ -13,6 +13,7 @@
     "@nextui-org/react": "^2.4.8",
     "framer-motion": "^11.18.2",
     "gsap": "^3.13.0",
+    "lucide-react": "^0.517.0",
     "next": "^15.3.3",
     "ogl": "^1.0.11",
     "react": "^18",
