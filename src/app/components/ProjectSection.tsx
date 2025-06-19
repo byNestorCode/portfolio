@@ -102,7 +102,7 @@ const ProjectSection: React.FC = () => {
 
     return (
         <>  
-            <section className='mt-18'>
+            <section className='mt-18 mb-12'>
                 <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12' id='projects'>
                     Check out my projects
                 </h2>
