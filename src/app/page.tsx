@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     title: '👋 Welcome friend',
     description: 'Check my projects and follow me!',
     url: 'https://nestorvazquez.mx',
-    images: ['https://nestorvazquez.mx/imagen.jpg']
+    images: ['https://nestorvazquez.mx/images/nestor.png']
   },
   twitter: {
     card: 'summary_large_image',
     title: '👋 Welcome friend',
     description: 'Check my projects and follow me!',
-    images: 'https://nestorvazquez.mx/imagen.jpg'
+    images: 'https://nestorvazquez.mx/images/nestor.png'
   }
 };
 
