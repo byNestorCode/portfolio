@@ -19,7 +19,7 @@ export const navigationItems = [
     },
     {
         title: "Projects",
-        href: "#contact",
+        href: "#projects",
         items: [],
     },
 ];

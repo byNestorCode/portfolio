@@ -101,45 +101,47 @@ const ProjectSection: React.FC = () => {
     );
 
     return (
-        <section className='h-screen'>
-            <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12' id='projects'>
-                Check out my projects
-            </h2>
-            <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-                {/* <button className='rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer'>
-                    All
-                </button>
-                <button className='rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer'>
-                    Web
-                </button> */}
-                <ProjectTag 
-                    onClick={handleTagChange} 
-                    name="All" 
-                    isSelected={tag === 'All'} 
-                />
-                <ProjectTag 
-                    onClick={handleTagChange} 
-                    name="Web" 
-                    isSelected={tag === 'Web'} 
-                />
-                <ProjectTag 
-                    onClick={handleTagChange} 
-                    name="App" 
-                    isSelected={tag === 'App'} 
-                />
-            </div>
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-                {filteredProjects.map((project) => (
-                    <ProjectCard 
-                        key={project.id} 
-                        title={project.title} 
-                        description={project.description} 
-                        imgUrl={project.image}
-                        gitUrl={project.git}
-                        previewUrl={project.site} />
-                ))}
-            </div>
-        </section>
+        <>  
+            <section className='mt-18 mb-12' id='projects'>
+                <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12' id='projects'>
+                    Check out my projects
+                </h2>
+                <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+                    {/* <button className='rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer'>
+                        All
+                    </button>
+                    <button className='rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer'>
+                        Web
+                    </button> */}
+                    <ProjectTag 
+                        onClick={handleTagChange} 
+                        name="All" 
+                        isSelected={tag === 'All'} 
+                    />
+                    <ProjectTag 
+                        onClick={handleTagChange} 
+                        name="Web" 
+                        isSelected={tag === 'Web'} 
+                    />
+                    <ProjectTag 
+                        onClick={handleTagChange} 
+                        name="App" 
+                        isSelected={tag === 'App'} 
+                    />
+                </div>
+                <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+                    {filteredProjects.map((project) => (
+                        <ProjectCard 
+                            key={project.id} 
+                            title={project.title} 
+                            description={project.description} 
+                            imgUrl={project.image}
+                            gitUrl={project.git}
+                            previewUrl={project.site} />
+                    ))}
+                </div>
+            </section>
+        </>
     );
 };
 

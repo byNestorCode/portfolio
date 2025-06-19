@@ -48,7 +48,7 @@ const HeroSection = () => {
                         </div>
                     </div>
                     <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-                        <div className="rounded-full bg-gradient-to-tl from-sky-900 to-slate-600 w-[250px] h-[250px] lg:w-[375px] lg:h-[375px] relative">
+                        <div className="rounded-full bg-gradient-to-tl from-sky-900 to-slate-600 w-[250px] h-[250px] lg:w-[375px] lg:h-[375px] relative mb-10">
                             <Image
                                 src="/images/nestor.png"
                                 alt="hero image"
