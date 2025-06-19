@@ -101,7 +101,7 @@ const ProjectSection: React.FC = () => {
     );
 
     return (
-        <section className='h-screen'>
+        <>
             <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12' id='projects'>
                 Check out my projects
             </h2>
@@ -139,7 +139,7 @@ const ProjectSection: React.FC = () => {
                         previewUrl={project.site} />
                 ))}
             </div>
-        </section>
+        </>
     );
 };
 
