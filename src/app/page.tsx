@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 import ProjectSection from './components/ProjectSection';
 import {NextUIProvider} from "@nextui-org/react";
 import GlassmorphNavbar from "./components/GlassmorphNavbar";
+import {HeroUIProvider} from "@heroui/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nestorvazquez.mx/'),
@@ -32,16 +33,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <NextUIProvider>
-    <main className="flex min-h-screen flex-col bg-[url(/images/fondo.svg)] bg-cover">
-      {/* <Navbar /> */}
-      <GlassmorphNavbar />
-      <div className="container mx-auto px-12">
-        <HeroSection />
-        <AboutSection />
-        <ProjectSection />
-      </div>
-    </main>
-    </NextUIProvider>
+    <HeroUIProvider>
+      <main className="flex min-h-screen flex-col bg-[url(/images/fondo.svg)] bg-cover">
+        {/* <Navbar /> */}
+        <GlassmorphNavbar />
+        <div className="container mx-auto px-12">
+          <HeroSection />
+          <AboutSection />
+          <ProjectSection />
+        </div>
+      </main>
+    </HeroUIProvider>
   );
 }
