@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "@heroui/react": "^2.7.11",
     "@nextui-org/react": "^2.4.8",
     "framer-motion": "^11.18.2",
     "gsap": "^3.13.0",
