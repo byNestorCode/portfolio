@@ -4,6 +4,7 @@ import React, { useTransition, useState } from 'react';
 import TabButton from './TabButton';
 import DecryptedText from './Code';
 import { Card, CardHeader, CardBody, Image } from "@heroui/react";
+import { Tooltip } from '@nextui-org/react';
 
 // Define los tipos para los datos de las pestañas
 interface TabData {
@@ -131,54 +132,78 @@ const AboutSection: React.FC = () => {
                         </CardHeader>
                         <CardBody className="overflow-visible py-2 px-6 justify-center">
                             <div className="gap-2 grid grid-cols-4 grid-rows-2">
-                                <Image
-                                    alt="Nextjs logo"
-                                    className="object-cover rounded-full"
-                                    src="https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1dxbfHSJFAPEGdCLU4o5B"
-                                    width={50}
-                                />
-                                <Image
-                                    alt="Django logo"
-                                    className="object-cover rounded-full"
-                                    src="https://cdn.brandfetch.io/idnYlnDpTD/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
-                                    width={50}
-                                />
-                                <Image
-                                    alt="Docker logo"
-                                    className="object-cover rounded-full"
-                                    src="https://cdn.brandfetch.io/id5_eOiB6T/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
-                                    width={50}
-                                />
-                                <Image
-                                    alt="python"
-                                    className="object-cover rounded-xl"
-                                    src="https://cdn.brandfetch.io/idbpOFBgcc/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
-                                    width={50}
-                                />
-                                <Image
-                                    alt="Solana logo"
-                                    className="rounded-full object-cover"
-                                    src="https://cdn.brandfetch.io/ide0NUuTHO/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
-                                    width={50}
-                                />
-                                <Image
-                                    alt="React logo"
-                                    className="rounded-full object-cover"
-                                    src="https://cdn.brandfetch.io/idTpJSSBPD/w/400/h/400/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B"
-                                    width={50}
-                                />
-                                <Image
-                                    alt="React logo"
-                                    className="rounded-full object-cover"
-                                    src="https://cdn.brandfetch.io/id8lDQ6AMj/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
-                                    width={50}
-                                />
-                                <Image
-                                    alt="React logo"
-                                    className="rounded-full object-cover"
-                                    src="https://cdn.brandfetch.io/idZAyF9rlg/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
-                                    width={50}
-                                />
+                                <Tooltip content="Nextjs" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="Nextjs logo"
+                                        className="object-cover rounded-full"
+                                        src="https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="django" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="Django logo"
+                                        className="object-cover rounded-full"
+                                        src="https://cdn.brandfetch.io/idnYlnDpTD/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="Docker" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="Docker logo"
+                                        className="object-cover rounded-full"
+                                        src="https://cdn.brandfetch.io/id5_eOiB6T/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="Python" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="python"
+                                        className="object-cover rounded-xl"
+                                        src="https://cdn.brandfetch.io/idbpOFBgcc/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="Solana" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="Solana logo"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/ide0NUuTHO/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="Internet Computer Protocol" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="ICP logo"
+                                        className="rounded-full object-cover align-content-center"
+                                        src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiZGZpbml0eVwvZmlsZVwvQ3ZFa3Y5eFhQOGQ3dW83ZkxFMmkucG5nIn0:dfinity:WGPFvOEBt8LexZ0568duC01k5g99_6IN-Ju8n3WvJhE?width=800&format=webp&quality=100"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="React Native" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="React logo"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/idTpJSSBPD/w/400/h/400/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="Snyk" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="SNYK logo"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/id8lDQ6AMj/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="GitHub" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="GitHub logo"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/idZAyF9rlg/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        width={50}
+                                    />
+                                </Tooltip>
                             </div>
                         </CardBody>
                     </Card>
