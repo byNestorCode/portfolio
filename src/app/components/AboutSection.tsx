@@ -117,11 +117,13 @@ const AboutSection: React.FC = () => {
                     <Card className="col-span-12 md:col-span-6">
                         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                             <p className="text-tiny uppercase font-bold">Experience</p>
-                            <small className="text-default-500">12 Tracks</small>
-                            <h4 className="font-bold text-large">Frontend Radio</h4>
+                            <small className="text-default-500">a brief summary of my career</small>
+                            <h4 className="font-bold text-large">:</h4>
                         </CardHeader>
-                        <CardBody className="overflow-visible py-2">
-                            <p>asdasd</p>
+                        <CardBody className="overflow-visible py-2 px-6 justify-center">
+                            <p>3+ years as DevSecOps</p>
+                            <p>2 year as Proyect Manajer in LABSOL/DEDICA</p>
+                            <p>1 year as Coordinator</p>
                         </CardBody>
                     </Card>
                     <Card className="col-span-12 md:col-span-6">
@@ -131,7 +133,7 @@ const AboutSection: React.FC = () => {
                             <h4 className="font-bold text-large">Fullstack and DevSecOps</h4>
                         </CardHeader>
                         <CardBody className="overflow-visible py-2 px-6 justify-center">
-                            <div className="gap-2 grid grid-cols-4 grid-rows-2">
+                            <div className="gap-2 grid grid-cols-4 grid-rows-2 items-center justify-items-center">
                                 <Tooltip content="Nextjs" showArrow={true} color='foreground'>
                                     <Image
                                         alt="Nextjs logo"
@@ -175,7 +177,7 @@ const AboutSection: React.FC = () => {
                                 <Tooltip content="Internet Computer Protocol" showArrow={true} color='foreground'>
                                     <Image
                                         alt="ICP logo"
-                                        className="rounded-full object-cover align-content-center"
+                                        className="rounded-full object-cover"
                                         src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiZGZpbml0eVwvZmlsZVwvQ3ZFa3Y5eFhQOGQ3dW83ZkxFMmkucG5nIn0:dfinity:WGPFvOEBt8LexZ0568duC01k5g99_6IN-Ju8n3WvJhE?width=800&format=webp&quality=100"
                                         width={50}
                                     />
