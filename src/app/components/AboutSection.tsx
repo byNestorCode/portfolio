@@ -53,7 +53,7 @@ const TAB_DATA = [
             <ul>
                 <li>3+ years as DevSecOps</li>
                 <li>1 year as Coordinator in PREP Project </li>
-                <li>1 year as Proyect Manajer in LABSOL</li>
+                <li>1 year as Proyect Manager in LABSOL</li>
             </ul>
         ),
     }
