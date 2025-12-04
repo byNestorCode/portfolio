@@ -209,7 +209,7 @@ const AboutSection: React.FC = () => {
                             </div>
                         </CardBody>
                     </Card>
-                    <Card className="col-span-12 md:col-span-6">
+                    {/* <Card className="col-span-12 md:col-span-6">
                         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                             <p className="text-tiny uppercase font-bold">Education</p>
                             <small className="text-default-500">12 Tracks</small>
@@ -238,7 +238,7 @@ const AboutSection: React.FC = () => {
                                 width={270}
                             />
                         </CardBody>
-                    </Card>
+                    </Card> */}
                 </div>
             </div>
         </section>
