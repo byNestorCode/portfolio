@@ -131,7 +131,7 @@ const AboutSection: React.FC = () => {
                                         <TableCell>3+ years as DevSecOps</TableCell>
                                     </TableRow>
                                     <TableRow key="2">
-                                        <TableCell>2 years as Proyect Manajer in LABSOL and DEDICA Fundation</TableCell>
+                                        <TableCell>2 years as Proyect Manager in LABSOL and DEDICA Fundation</TableCell>
                                     </TableRow>
                                     <TableRow key="3">
                                         <TableCell>1 year as coordinator at a government institute</TableCell>
