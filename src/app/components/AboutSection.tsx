@@ -5,6 +5,7 @@ import TabButton from './TabButton';
 import DecryptedText from './Code';
 import { Card, CardHeader, CardBody, Image } from "@heroui/react";
 import { Tooltip } from '@nextui-org/react';
+import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell} from "@heroui/table";
 
 // Define los tipos para los datos de las pestañas
 interface TabData {
@@ -118,12 +119,25 @@ const AboutSection: React.FC = () => {
                         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                             <p className="text-tiny uppercase font-bold">Experience</p>
                             <small className="text-default-500">a brief summary of my career</small>
-                            <h4 className="font-bold text-large">:</h4>
+                            <h4 className="font-bold text-large">Jobs</h4>
                         </CardHeader>
                         <CardBody className="overflow-visible py-2 px-6 justify-center">
-                            <p>3+ years as DevSecOps</p>
-                            <p>2 year as Proyect Manajer in LABSOL/DEDICA</p>
-                            <p>1 year as Coordinator</p>
+                            <Table isStriped aria-label="Example static collection table" selectionMode="single" hideHeader>
+                                <TableHeader>
+                                    <TableColumn>Jobs</TableColumn>
+                                </TableHeader>
+                                <TableBody>
+                                    <TableRow key="1">
+                                        <TableCell>- 3+ years as DevSecOps</TableCell>
+                                    </TableRow>
+                                    <TableRow key="2">
+                                        <TableCell>- 2 years as Proyect Manajer in LABSOL and DEDICA Fundation</TableCell>
+                                    </TableRow>
+                                    <TableRow key="3">
+                                        <TableCell>- 1 year as Coordinator</TableCell>
+                                    </TableRow>
+                                </TableBody>
+                            </Table>
                         </CardBody>
                     </Card>
                     <Card className="col-span-12 md:col-span-6">
