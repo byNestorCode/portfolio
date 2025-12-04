@@ -1,13 +1,9 @@
-import Image from "next/image";
-import Head from 'next/head';
 import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
 import AboutSection from './components/AboutSection';
 import { Metadata } from 'next';
 import ProjectSection from './components/ProjectSection';
-import {NextUIProvider} from "@nextui-org/react";
 import GlassmorphNavbar from "./components/GlassmorphNavbar";
-import {HeroUIProvider} from "@heroui/react";
+import Providers from "./components/Providers";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nestorvazquez.mx/'),
@@ -33,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <HeroUIProvider>
+    <Providers>
       <main className="flex min-h-screen flex-col bg-[url(/images/fondo.svg)] bg-cover">
         {/* <Navbar /> */}
         <GlassmorphNavbar />
@@ -43,6 +39,6 @@ export default function Home() {
           <ProjectSection />
         </div>
       </main>
-    </HeroUIProvider>
+    </Providers>
   );
 }
