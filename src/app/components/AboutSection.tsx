@@ -122,19 +122,19 @@ const AboutSection: React.FC = () => {
                             <h4 className="font-bold text-large">Jobs</h4>
                         </CardHeader>
                         <CardBody className="overflow-visible py-2 px-6 justify-center">
-                            <Table isStriped aria-label="Example static collection table" selectionMode="single" hideHeader>
+                            <Table aria-label="table" selectionMode="single" hideHeader removeWrapper>
                                 <TableHeader>
                                     <TableColumn>Jobs</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
-                                        <TableCell>- 3+ years as DevSecOps</TableCell>
+                                        <TableCell>3+ years as DevSecOps</TableCell>
                                     </TableRow>
                                     <TableRow key="2">
-                                        <TableCell>- 2 years as Proyect Manajer in LABSOL and DEDICA Fundation</TableCell>
+                                        <TableCell>2 years as Proyect Manajer in LABSOL and DEDICA Fundation</TableCell>
                                     </TableRow>
                                     <TableRow key="3">
-                                        <TableCell>- 1 year as Coordinator</TableCell>
+                                        <TableCell>1 year as coordinator at a government institute</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>
@@ -217,6 +217,14 @@ const AboutSection: React.FC = () => {
                                         alt="GitHub logo"
                                         className="rounded-full object-cover"
                                         src="https://cdn.brandfetch.io/idZAyF9rlg/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="n8n" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="n8n logo"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/idO6_6uqJ9/w/600/h/600/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B"
                                         width={50}
                                     />
                                 </Tooltip>
