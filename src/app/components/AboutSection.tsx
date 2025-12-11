@@ -84,7 +84,7 @@ const AboutSection: React.FC = () => {
                     </h2>
                     <div style={{ marginTop: '4rem', marginBottom: '4rem' }}>
                         <DecryptedText
-                            text="I’m a young technology enthusiast, and I’m always asking myself: how does it work? In my mind, I’ve always taken things apart to figure out how they work. I love a challenge and I’m constantly looking to learn every day. I work in DevSecOps and I’m a growing data analyst—maybe even I'm an AI?"
+                            text="I'm a young technology enthusiast, and I'm always asking myself: how does it work? In my mind, I've always taken things apart to figure out how they work. I love a challenge and I'm constantly looking to learn every day. I work in DevSecOps and I'm a growing data analyst—maybe even I'm an AI?"
                             animateOn="view"
                             revealDirection="start"
                             sequential={true}
