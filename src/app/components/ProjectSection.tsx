@@ -103,8 +103,8 @@ const ProjectSection: React.FC = () => {
     return (
         <>  
             <section className='mt-18 mb-12' id='projects'>
-                <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12' id='projects'>
-                    Check out my projects
+                <h2 className='mx-auto text-4xl md:text-5xl font-extrabold mb-12 w-full max-w-xl md:max-w-2xl lg:max-w-3xl rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg px-6 py-6 text-center' id='projects'>
+                    Check Out My Projects
                 </h2>
                 <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
                     {/* <button className='rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer'>
