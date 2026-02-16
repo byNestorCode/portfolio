@@ -70,65 +70,33 @@ const AboutSection: React.FC = () => {
     };
 
     return (
-        <section className='text-white min-h-screen' id='about'>
-            <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-                {/* <Image 
-                    src={'/images/programmer.png'}
-                    width={500}
-                    height={500}
-                    alt='About me'
-                /> */}
-                <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
-                    <h2 className='text-4xl font-bold text-white mb-4'>
-                        About me
-                    </h2>
-                    <div style={{ marginTop: '4rem', marginBottom: '4rem' }}>
-                        <DecryptedText
-                            text="I'm a young technology enthusiast, and I'm always asking myself: how does it work? In my mind, I've always taken things apart to figure out how they work. I love a challenge and I'm constantly looking to learn every day. I work in DevSecOps and I'm a growing data analyst—maybe even I'm an AI?"
-                            animateOn="view"
-                            revealDirection="start"
-                            sequential={true}
-                            speed={10}
-                        />
-                    </div>
-                    {/* <p className='text-base lg:text-lg'>
-                        I am a young technology enthusiast and I always ask myself: how does it work? In my mind I have always taken it apart to find out how it works. I love a challenge and am constantly looking to learn on a daily basis. DevSecOps by profession and growing data analyst, possibly an IA?.
-                        </p> */}
-                    {/* <div className="flex flex-row justify-start mt-8">
-                        <TabButton selectTab={() => handleTabChange('experience')} active={tab === 'experience'}>
-                            {" "}
-                            Experience{" "}
-                        </TabButton>
-                        <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>
-                            {" "}
-                            Skills{" "}
-                        </TabButton>
-                        <TabButton selectTab={() => handleTabChange('education')} active={tab === 'education'}>
-                            {" "}
-                            Education{" "}
-                        </TabButton>
-                        <TabButton selectTab={() => handleTabChange('certifications')} active={tab === 'certifications'}>
-                            {" "}
-                            Certs{" "}
-                        </TabButton>
-                    </div>
-                    <div className="mt-8">{TAB_DATA.find((t) => t.id === tab)?.content}</div> */}
-                </div>
-                <div className="max-w-[100%] gap-2 grid grid-cols-12 grid-rows-3">
-                    <Card className="col-span-12 md:col-span-6">
+        <section className="text-white min-h-screen" id="about">
+            <div className="mx-auto mb-12 w-full max-w-xl md:max-w-2xl lg:max-w-3xl rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg px-6 py-6 text-center">
+                <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-3">
+                    About Me
+                </h2>
+                <p className="text-gray-400 max-w-2xl mx-auto">
+                    Building scalable systems, leading technical projects,
+                    and delivering high-quality digital solutions.
+                </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="w-full flex flex-col gap-2 justify-center items-center">
+                    <Card className="w-full md:max-w-[70%] lg:min-w-[70%] col-span-12 md:col-span-12 rounded-2xl bg-slate-950 bg-opacity-65  backdrop-blur-md border border-white/10 shadow-lg text-white">
                         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                             <p className="text-tiny uppercase font-bold">Experience</p>
                             <small className="text-default-500">a brief summary of my career</small>
                             <h4 className="font-bold text-large">Jobs</h4>
                         </CardHeader>
-                        <CardBody className="overflow-visible py-2 px-6 justify-center">
+                        <CardBody className="mx-auto lg:max-w-[60%] overflow-visible py-2 px-6 justify-center">
                             <Table aria-label="table" selectionMode="single" hideHeader removeWrapper>
                                 <TableHeader>
                                     <TableColumn>Jobs</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
-                                        <TableCell>3+ years as DevSecOps</TableCell>
+                                        <TableCell>4+ years as DevSecOps</TableCell>
                                     </TableRow>
                                     <TableRow key="2">
                                         <TableCell>2 years as Project Manager in LABSOL and DEDICA Fundation</TableCell>
@@ -140,14 +108,14 @@ const AboutSection: React.FC = () => {
                             </Table>
                         </CardBody>
                     </Card>
-                    <Card className="col-span-12 md:col-span-6">
+                    <Card className="w-full md:max-w-[70%] lg:min-w-[70%] col-span-12 md:col-span-12 rounded-2xl bg-slate-950 bg-opacity-65  backdrop-blur-md border border-white/10 shadow-lg text-white">
                         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                             <p className="text-tiny uppercase font-bold">Skills</p>
                             <small className="text-default-500">Technical</small>
                             <h4 className="font-bold text-large">Fullstack and DevSecOps</h4>
                         </CardHeader>
                         <CardBody className="overflow-visible py-2 px-6 justify-center">
-                            <div className="gap-2 grid grid-cols-4 grid-rows-2 items-center justify-items-center">
+                            <div className="mx-auto grid w-fit grid-cols-4 gap-3 place-items-center rounded-xl p-3">
                                 <Tooltip content="Nextjs" showArrow={true} color='foreground'>
                                     <Image
                                         alt="Nextjs logo"
@@ -216,7 +184,7 @@ const AboutSection: React.FC = () => {
                                     <Image
                                         alt="GitHub logo"
                                         className="rounded-full object-cover"
-                                        src="https://cdn.brandfetch.io/idZAyF9rlg/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                                        src="https://cdn.brandfetch.io/idZAyF9rlg/theme/light/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1719469980826"
                                         width={50}
                                     />
                                 </Tooltip>
@@ -231,36 +199,81 @@ const AboutSection: React.FC = () => {
                             </div>
                         </CardBody>
                     </Card>
-                    {/* <Card className="col-span-12 md:col-span-6">
-                        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-                            <p className="text-tiny uppercase font-bold">Education</p>
-                            <small className="text-default-500">12 Tracks</small>
-                            <h4 className="font-bold text-large">Frontend Radio</h4>
-                        </CardHeader>
-                        <CardBody className="overflow-visible py-2">
-                            <Image
-                                alt="Card background"
-                                className="object-cover rounded-xl"
-                                src="https://heroui.com/images/hero-card-complete.jpeg"
-                                width={270}
-                            />
-                        </CardBody>
-                    </Card>
-                    <Card className="col-span-12 md:col-span-6">
-                        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-                            <p className="text-tiny uppercase font-bold">Certs</p>
-                            <small className="text-default-500">12 Tracks</small>
-                            <h4 className="font-bold text-large">Frontend Radio</h4>
-                        </CardHeader>
-                        <CardBody className="overflow-visible py-2">
-                            <Image
-                                alt="Card background"
-                                className="object-cover rounded-xl"
-                                src="https://heroui.com/images/hero-card-complete.jpeg"
-                                width={270}
-                            />
-                        </CardBody>
-                    </Card> */}
+                </div>
+
+                <div className="flex flex-col justify-center gap-1 px-4 py-6 lg:px-6 rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg">
+
+                    <div className="space-y-4">
+                        <p className="text-sm uppercase tracking-wider text-purple-400 font-semibold">
+                            Profile
+                        </p>
+                        <p className="text-gray-300 leading-relaxed text-lg">
+                            Software Engineer specialized in designing and developing
+                            scalable, high-performance web systems.
+                        </p>
+                        <p className="text-gray-400 leading-relaxed">
+                            Strong background in infrastructure, security,
+                            and project leadership, focused on delivering
+                            reliable, production-ready solutions.
+                        </p>
+                        {/* <DecryptedText
+                            text="I'm a young technology enthusiast, and I'm always asking myself: how does it work? In my mind, I've always taken things apart to figure out how they work. I love a  challenge and I'm constantly looking to learn every day. I work in DevSecOps and I'm a growing data analyst—maybe even I'm an AI?"
+                            animateOn="view"
+                            revealDirection="start"
+                            sequential={true}
+                            speed={10}
+                        /> */}
+                    </div>
+                    {/* HIGHLIGHTS */}
+                    <div className="space-y-4">
+                        <h4 className="text-xl font-semibold text-white">
+                            Core Strengths
+                        </h4>
+                        <ul className="space-y-3 text-gray-300">
+                            <li className="flex items-center gap-2">
+                                <span>🚀</span> System Architecture & Scalability
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span>🔐</span> Security-first Development
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span>📊</span> Technical Project Leadership
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span>⚙️</span> Cloud & DevOps Automation
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span>🧠</span> AI & Workflow Optimization
+                            </li>
+                        </ul>
+                    </div>
+                    {/* STATS */}
+                    <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10">
+                        <div>
+                            <p className="text-3xl font-bold text-white">
+                                6+
+                            </p>
+                            <p className="text-sm text-gray-400">
+                                Years Experience
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-3xl font-bold text-white">
+                                20+
+                            </p>
+                            <p className="text-sm text-gray-400">
+                                Projects
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-3xl font-bold text-white">
+                                10+
+                            </p>
+                            <p className="text-sm text-gray-400">
+                                Technologies
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
