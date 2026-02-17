@@ -5,7 +5,7 @@ import TabButton from './TabButton';
 import DecryptedText from './Code';
 import { Card, CardHeader, CardBody, Image } from "@heroui/react";
 import { Tooltip } from '@nextui-org/react';
-import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell} from "@heroui/table";
+import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell } from "@heroui/table";
 
 // Define los tipos para los datos de las pestañas
 interface TabData {
@@ -84,10 +84,10 @@ const AboutSection: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="w-full flex flex-col gap-2 justify-center items-center">
                     <Card className="w-full md:max-w-[70%] lg:min-w-[70%] col-span-12 md:col-span-12 rounded-2xl bg-slate-950 bg-opacity-65  backdrop-blur-md border border-white/10 shadow-lg text-white">
-                        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-                            <p className="text-tiny uppercase font-bold">Experience</p>
+                        <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
+                            <p className="text-bold uppercase font-bold">Experience</p>
                             <small className="text-default-500">a brief summary of my career</small>
-                            <h4 className="font-bold text-large">Jobs</h4>
+                            {/* <h4 className="font-tiny text-large">Jobs</h4> */}
                         </CardHeader>
                         <CardBody className="mx-auto lg:max-w-[60%] overflow-visible py-2 px-6 justify-center">
                             <Table aria-label="table" selectionMode="single" hideHeader removeWrapper>
@@ -109,10 +109,10 @@ const AboutSection: React.FC = () => {
                         </CardBody>
                     </Card>
                     <Card className="w-full md:max-w-[70%] lg:min-w-[70%] col-span-12 md:col-span-12 rounded-2xl bg-slate-950 bg-opacity-65  backdrop-blur-md border border-white/10 shadow-lg text-white">
-                        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-                            <p className="text-tiny uppercase font-bold">Skills</p>
+                        <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
+                            <p className="text-bold uppercase font-bold">Skills</p>
                             <small className="text-default-500">Technical</small>
-                            <h4 className="font-bold text-large">Fullstack and DevSecOps</h4>
+                            {/* <h4 className="font-tiny text-large">Fullstack and DevSecOps</h4> */}
                         </CardHeader>
                         <CardBody className="overflow-visible py-2 px-6 justify-center">
                             <div className="mx-auto grid w-fit grid-cols-4 gap-3 place-items-center rounded-xl p-3">
@@ -276,6 +276,12 @@ const AboutSection: React.FC = () => {
                     </div>
                 </div>
             </div>
+            <a href="#about" className="mt-24 flex flex-col items-center text-gray-400 hover:text-white transition animate-bounce">
+                <span className="text-xs uppercase tracking-widest mb-1">
+                    See my projects
+                </span>
+                <span className="text-xl">↓</span>
+            </a>
         </section>
     );
 };
