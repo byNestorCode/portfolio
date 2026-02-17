@@ -276,7 +276,7 @@ const AboutSection: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <a href="#about" className="mt-24 flex flex-col items-center text-gray-400 hover:text-white transition animate-bounce">
+            <a href="#projects" className="mt-24 flex flex-col items-center text-gray-400 hover:text-white transition animate-bounce">
                 <span className="text-xs uppercase tracking-widest mb-1">
                     See my projects
                 </span>
