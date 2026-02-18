@@ -6,6 +6,7 @@ import DecryptedText from './Code';
 import { Card, CardHeader, CardBody, Image } from "@heroui/react";
 import { Tooltip } from '@nextui-org/react';
 import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell } from "@heroui/table";
+import CountUp from './CountUp';
 
 // Define los tipos para los datos de las pestañas
 interface TabData {
@@ -83,9 +84,9 @@ const AboutSection: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="w-full flex flex-col gap-2 justify-center items-center">
-                    <Card className="w-full md:max-w-[70%] lg:min-w-[70%] col-span-12 md:col-span-12 rounded-2xl bg-slate-950 bg-opacity-65  backdrop-blur-md border border-white/10 shadow-lg text-white">
-                        <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
-                            <p className="text-bold uppercase font-bold">Experience</p>
+                    <Card className="w-full md:max-w-[100%] lg:min-w-[100%] col-span-12 md:col-span-12 rounded-2xl bg-slate-950 bg-opacity-65  backdrop-blur-md border border-white/10 shadow-lg text-white">
+                        <CardHeader className="mt-2 pb-0 pt-2 px-4 flex-col items-center">
+                            <p className="text-2xl text-bold uppercase font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Experience</p>
                             <small className="text-default-500">a brief summary of my career</small>
                             {/* <h4 className="font-tiny text-large">Jobs</h4> */}
                         </CardHeader>
@@ -108,9 +109,9 @@ const AboutSection: React.FC = () => {
                             </Table>
                         </CardBody>
                     </Card>
-                    <Card className="w-full md:max-w-[70%] lg:min-w-[70%] col-span-12 md:col-span-12 rounded-2xl bg-slate-950 bg-opacity-65  backdrop-blur-md border border-white/10 shadow-lg text-white">
-                        <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
-                            <p className="text-bold uppercase font-bold">Skills</p>
+                    <Card className="w-full md:max-w-[100%] lg:min-w-[100%] col-span-12 md:col-span-12 rounded-2xl bg-slate-950 bg-opacity-65  backdrop-blur-md border border-white/10 shadow-lg text-white">
+                        <CardHeader className="mt-2 pb-0 pt-2 px-4 flex-col items-center">
+                            <p className="text-2xl text-bold uppercase font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Skills</p>
                             <small className="text-default-500">Technical</small>
                             {/* <h4 className="font-tiny text-large">Fullstack and DevSecOps</h4> */}
                         </CardHeader>
@@ -201,29 +202,26 @@ const AboutSection: React.FC = () => {
                     </Card>
                 </div>
 
-                <div className="flex flex-col justify-center gap-1 px-4 py-6 lg:px-6 rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg">
-
-                    <div className="space-y-4">
-                        <p className="text-sm uppercase tracking-wider text-purple-400 font-semibold">
-                            Profile
-                        </p>
-                        <p className="text-gray-300 leading-relaxed text-lg">
-                            Software Engineer specialized in designing and developing
-                            scalable, high-performance web systems.
-                        </p>
-                        <p className="text-gray-400 leading-relaxed">
-                            Strong background in infrastructure, security,
-                            and project leadership, focused on delivering
-                            reliable, production-ready solutions.
-                        </p>
-                        {/* <DecryptedText
+                <div className="flex flex-col justify-center gap-2 px-4 py-6 lg:px-6 rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg">
+                    <p className="mx-auto text-center text-2xl text-bold uppercase font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                        Profile
+                    </p>
+                    <p className="text-gray-300 leading-relaxed text-lg">
+                        Software Engineer specialized in designing and developing
+                        scalable, high-performance web systems.
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                        Strong background in infrastructure, security,
+                        and project leadership, focused on delivering
+                        reliable, production-ready solutions.
+                    </p>
+                    {/* <DecryptedText
                             text="I'm a young technology enthusiast, and I'm always asking myself: how does it work? In my mind, I've always taken things apart to figure out how they work. I love a  challenge and I'm constantly looking to learn every day. I work in DevSecOps and I'm a growing data analyst—maybe even I'm an AI?"
                             animateOn="view"
                             revealDirection="start"
                             sequential={true}
                             speed={10}
                         /> */}
-                    </div>
                     {/* HIGHLIGHTS */}
                     <div className="space-y-4">
                         <h4 className="text-xl font-semibold text-white">
@@ -250,26 +248,47 @@ const AboutSection: React.FC = () => {
                     {/* STATS */}
                     <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10">
                         <div>
-                            <p className="text-3xl font-bold text-white">
-                                6+
+                            <p className="text-3xl font-bold text-white text-center">
+                                <CountUp
+                                    from={0}
+                                    to={6}
+                                    separator=","
+                                    direction="up"
+                                    duration={1}
+                                    className="count-up-text"
+                                />+
                             </p>
-                            <p className="text-sm text-gray-400">
+                            <p className="text-sm text-gray-400 text-center">
                                 Years Experience
                             </p>
                         </div>
                         <div>
-                            <p className="text-3xl font-bold text-white">
-                                20+
+                            <p className="text-3xl font-bold text-white text-center">
+                                <CountUp
+                                    from={0}
+                                    to={20}
+                                    separator=","
+                                    direction="up"
+                                    duration={1}
+                                    className="count-up-text"
+                                />+
                             </p>
-                            <p className="text-sm text-gray-400">
+                            <p className="text-sm text-gray-400 text-center">
                                 Projects
                             </p>
                         </div>
                         <div>
-                            <p className="text-3xl font-bold text-white">
-                                10+
+                            <p className="text-3xl font-bold text-white text-center">
+                                <CountUp
+                                    from={0}
+                                    to={10}
+                                    separator=","
+                                    direction="up"
+                                    duration={1}
+                                    className="count-up-text"
+                                />+
                             </p>
-                            <p className="text-sm text-gray-400">
+                            <p className="text-sm text-gray-400 text-center">
                                 Technologies
                             </p>
                         </div>
