@@ -197,6 +197,23 @@ const AboutSection: React.FC = () => {
                                         width={50}
                                     />
                                 </Tooltip>
+                                <Tooltip content="Cloudflare" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="Cloudflare"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/idJ3Cg8ymG/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1668515610854"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                <Tooltip content="aws" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="aws"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/idVoqFQ-78/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1691083841359"
+                                        width={50}
+                                    />
+                                </Tooltip>
+                                
                             </div>
                         </CardBody>
                     </Card>
