@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, g
                     </Link>
                 </div>
             </div>
-            <SpotlightCard className="custom-spotlight-card mt-3 rounded-b-xl rounded-t-none h-52" spotlightColor="rgba(0, 229, 255, 0.2)">
+            <SpotlightCard className="custom-spotlight-card mt-3 rounded-b-xl rounded-t-none h-52" spotlightColor="rgba(0, 229, 255, 0.5)">
                 <h5 className='text-xl font-semibold mb-2'>{ title }</h5>
                 <p className='text-[#ADB7BE]'>{ description }</p>
             </SpotlightCard>
