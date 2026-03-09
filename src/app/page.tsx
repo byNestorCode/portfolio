@@ -31,7 +31,6 @@ export default function Home() {
   return (
     <Providers>
       <main className="flex min-h-screen flex-col bg-[url(/images/fondo.svg)] bg-cover">
-        {/* <Navbar /> */}
         <GlassmorphNavbar />
         <div className="container mx-auto px-12">
           <HeroSection />
