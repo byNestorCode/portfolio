@@ -60,7 +60,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, g
                 </div>
 
                 {/* Technologies */}
-                <div className="flex flex-wrap gap-2 justify-end mt-4">
+                <div className="flex flex-wrap gap-2 justify-center md:justify-end mt-4">
                     {technologies.map((tech) => (
                         <Chip
                             avatar={<Avatar name={tech.name} src={tech.logo}/>}

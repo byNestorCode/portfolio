@@ -324,7 +324,7 @@ const ProjectSection: React.FC = () => {
                         isSelected={tag === 'Repo'}
                     /> */}
                 </div>
-                <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+                <div className="grid md:grid-cols-3 sm:grid-cols-3 gap-8 md:gap-12">
                     {filteredProjects.map((project) => (
                         <ProjectCard
                             key={project.id}
