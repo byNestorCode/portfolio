@@ -3,8 +3,7 @@ import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import SpotlightCard from './SpotlightCard';
 import { Card, CardHeader, CardFooter, CardBody } from '@nextui-org/react';
-import { Chip } from '@nextui-org/react';
-import { Avatar } from '@nextui-org/react';
+import { Chip, Avatar } from '@nextui-org/react';
 
 interface Technologies {
         name: string,
