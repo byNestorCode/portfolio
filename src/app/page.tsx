@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Providers>
-      <main className="relative flex min-h-screen flex-col bg-transparent">
+      <main className="relative flex min-h-screen flex-col bg-transparent overflow-hidden">
         <div className="fixed inset-0 z-0 pointer-events-none">
           <Grainient
             color1="#006d8f"
