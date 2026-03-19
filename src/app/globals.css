@@ -9,8 +9,9 @@
 }
 
 ::selection {
-  background-color: #7c3aed; /* purple-600 */
-  color: white;
+  /* background-color: #7c3aed; */ /* purple-600 */
+  background-color: mediumspringgreen;
+  color: darkslategrey;
 }
 
 @media (prefers-color-scheme: dark) {
