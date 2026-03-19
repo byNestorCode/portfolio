@@ -45,7 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, g
                 </Chip>
             </SpotlightCard> */}
             <SpotlightCard
-                className="custom-spotlight-card mt-3 h-64 flex flex-col justify-between rounded-b-xl rounded-t-none p-4"
+                className="mt-3 h-64 flex flex-col justify-between rounded-b-xl rounded-t-none p-4 rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg"
                 spotlightColor="rgba(0, 229, 255, 0.5)"
             >
                 {/* Content */}
