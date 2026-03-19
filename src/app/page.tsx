@@ -35,7 +35,7 @@ export default function Home() {
       <main className="relative flex min-h-screen flex-col bg-transparent overflow-hidden">
         <Background />
         <GlassmorphNavbar />
-        <div className="container mx-auto px-12 relative z-10">
+        <div className="container mx-auto px-4 relative z-10">
           <HeroSection />
           <AboutSection />
           <ProjectSection />
