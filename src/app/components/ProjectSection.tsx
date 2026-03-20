@@ -288,7 +288,7 @@ const ProjectSection: React.FC = () => {
     return (
         <>
             <section className='mt-18 mb-12 min-h-screen' id='projects'>
-                <h2 className='mx-auto text-4xl md:text-5xl font-extrabold mb-12 w-full max-w-xl md:max-w-2xl lg:max-w-3xl rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg px-6 py-6 text-center' id='projects'>
+                <h2 className='mx-auto text-4xl md:text-5xl font-extrabold w-full max-w-xl md:max-w-2xl lg:max-w-3xl rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg px-6 py-6 text-center' id='projects'>
                     Check Out My Projects
                 </h2>
                 <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
