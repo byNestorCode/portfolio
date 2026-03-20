@@ -7,7 +7,7 @@ function Background() {
     const isMobile = useIsMobile();
 
     return (
-        <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="fixed inset-0 z-0 pointer-events-none will-change-transform">
             {!isMobile ? (
                 <Grainient
                     color1="#006d8f"
