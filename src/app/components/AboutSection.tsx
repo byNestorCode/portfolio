@@ -71,7 +71,7 @@ const AboutSection: React.FC = () => {
     };
 
     return (
-        <section className="text-white min-h-screen h-screen" id="about">
+        <section className="text-white min-h-screen" id="about">
             <div className="mx-auto mb-12 w-full max-w-xl md:max-w-2xl lg:max-w-3xl rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg px-6 py-6 text-center">
                 <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-3">
                     About Me
