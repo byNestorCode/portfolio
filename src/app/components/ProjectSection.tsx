@@ -11,7 +11,7 @@ const ProjectsData = [
         image: "/images/projects/11-sisare.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
-        site: "https://sisare.ieeags,mx/",
+        site: "https://sisare.ieeags.mx/",
         technologies: [
             {
                 name: "Django",
