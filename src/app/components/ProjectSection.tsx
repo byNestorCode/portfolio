@@ -286,59 +286,57 @@ const ProjectSection: React.FC = () => {
     ).sort((a, b) => b.id - a.id);
 
     return (
-        <>
-            <section className='mt-18 mb-12 min-h-screen' id='projects'>
-                <h2 className='mx-auto text-4xl md:text-5xl font-extrabold w-full max-w-xl md:max-w-2xl lg:max-w-3xl rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg px-6 py-6 text-center' id='projects'>
-                    Check Out My Projects
-                </h2>
-                <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-                    {/* <button className='rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer'>
-                        All
-                    </button>
-                    <button className='rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer'>
-                        Web
-                    </button> */}
-                    <ProjectTag
-                        onClick={handleTagChange}
-                        name="All"
-                        isSelected={tag === 'All'}
+        <section className='mt-18 mb-12 min-h-screen' id='projects'>
+            <h2 className='mx-auto text-4xl md:text-5xl font-extrabold w-full max-w-xl md:max-w-2xl lg:max-w-3xl rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg px-6 py-6 text-center'>
+                Check Out My Projects
+            </h2>
+            <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+                {/* <button className='rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer'>
+                    All
+                </button>
+                <button className='rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer'>
+                    Web
+                </button> */}
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="All"
+                    isSelected={tag === 'All'}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="Web"
+                    isSelected={tag === 'Web'}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="App"
+                    isSelected={tag === 'App'}
+                />
+                {/* <ProjectTag
+                    onClick={handleTagChange}
+                    name="Odoo"
+                    isSelected={tag === 'Odoo'}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="Repo"
+                    isSelected={tag === 'Repo'}
+                /> */}
+            </div>
+            <div className="grid md:grid-cols-3 sm:grid-cols-3 gap-8 md:gap-12">
+                {filteredProjects.map((project) => (
+                    <ProjectCard
+                        key={project.id}
+                        title={project.title}
+                        description={project.description}
+                        imgUrl={project.image}
+                        gitUrl={project.git}
+                        previewUrl={project.site}
+                        technologies={project.technologies}
                     />
-                    <ProjectTag
-                        onClick={handleTagChange}
-                        name="Web"
-                        isSelected={tag === 'Web'}
-                    />
-                    <ProjectTag
-                        onClick={handleTagChange}
-                        name="App"
-                        isSelected={tag === 'App'}
-                    />
-                    {/* <ProjectTag
-                        onClick={handleTagChange}
-                        name="Odoo"
-                        isSelected={tag === 'Odoo'}
-                    />
-                    <ProjectTag
-                        onClick={handleTagChange}
-                        name="Repo"
-                        isSelected={tag === 'Repo'}
-                    /> */}
-                </div>
-                <div className="grid md:grid-cols-3 sm:grid-cols-3 gap-8 md:gap-12">
-                    {filteredProjects.map((project) => (
-                        <ProjectCard
-                            key={project.id}
-                            title={project.title}
-                            description={project.description}
-                            imgUrl={project.image}
-                            gitUrl={project.git}
-                            previewUrl={project.site}
-                            technologies={project.technologies}
-                        />
-                    ))}
-                </div>
-            </section>
-        </>
+                ))}
+            </div>
+        </section>
     );
 };
 
