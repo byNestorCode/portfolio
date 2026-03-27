@@ -5,10 +5,41 @@ import ProjectTag from './ProjectTag';
 
 const ProjectsData = [
     {
+        id: 12,
+        title: "Micrositio informativo PREP",
+        description: "Permite la transparencia haciendo públicos los acuerdos, informes y actividades.",
+        image: "/images/projects/micrositioprep.png",
+        tag: ["All", "Web"],
+        git: "https://github.com/byNestorCode",
+        site: "https://prep.ieeags.mx/",
+        technologies: [
+            {
+                name: "Django",
+                color: "success",
+                logo: "https://cdn.brandfetch.io/idnYlnDpTD/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1772748727084"
+            },
+            {
+                name: "Next.js",
+                color: "default",
+                logo: "https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+            },
+            {
+                name: "Python",
+                color: "warning",
+                logo: "https://cdn.brandfetch.io/idbpOFBgcc/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1772193840871"
+            },
+            {
+                name: "Docker",
+                color: "default",
+                logo: "https://cdn.brandfetch.io/id5_eOiB6T/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1707508247180"
+            },
+        ]
+    },
+    {
         id: 11,
         title: "SISARE",
         description: "Sistema de Sanciones y Remanentes",
-        image: "/images/projects/11-sisare.png",
+        image: "/images/projects/sisare.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
         site: "https://sisare.ieeags.mx/",
