@@ -52,7 +52,16 @@ const HeroSection = () => {
                                 Contact Me
                             </a>
                         </button>
-
+                        <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white">
+                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                                <a
+                                    href="https://rxresu.me/rocketmx_/cv-nestor"
+                                    target="_blank"
+                                >
+                                    RxResume
+                                </a>
+                            </span>
+                        </button>
                         <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white">
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                                 <a
