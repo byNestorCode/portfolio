@@ -88,6 +88,7 @@ const HeroSection = () => {
                             width={300}
                             height={300}
                             className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            loading="eager"
                         />
                         <div className="" style={{ width: '130%', height: '130%', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', overflow: 'hidden' }}>
                             <Orb
