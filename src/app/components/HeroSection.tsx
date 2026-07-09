@@ -58,11 +58,11 @@ const HeroSection = () => {
                                     href="https://rxresu.me/rocketmx_/cv-nestor-devsecops"
                                     target="_blank"
                                 >
-                                    RxResume
+                                    Download CV
                                 </a>
                             </span>
                         </button>
-                        <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white">
+                        {/* <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white">
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                                 <a
                                     href="https://drive.google.com/file/d/1-68hqKVNMSmqC-co5xRQWE7qPdxzBgQQ/view?usp=sharing"
@@ -71,7 +71,7 @@ const HeroSection = () => {
                                     Download CV
                                 </a>
                             </span>
-                        </button>
+                        </button> */}
                     </div>
                     <a href="#about" className="mt-10 flex flex-col items-center text-gray-400 hover:text-white transition animate-bounce">
                         <span className="text-xs uppercase tracking-widest mb-1">
