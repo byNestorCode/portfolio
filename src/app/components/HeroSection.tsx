@@ -43,25 +43,29 @@ const HeroSection = () => {
                         Software Engineer specializing in scalable web applications and modern system architecture.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
-                            <a
-                                href="mailto:hola@nestorvazquez.mx?subject=✅🚀%20We want you!"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Contact Me
-                            </a>
-                        </button>
-                        <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white">
-                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                                <a
-                                    href="https://rxresu.me/rocketmx_/cv-nestor-devsecops"
-                                    target="_blank"
-                                >
-                                    Download CV
-                                </a>
+                        <a href="mailto:hola@nestorvazquez.mx?subject=✅🚀%20We%20want%20you!" target="_blank" rel="noopener noreferrer" className="
+                                px-6 py-3
+                                w-full sm:w-fit
+                                rounded-full
+                                bg-gradient-to-br
+                                from-blue-500 via-purple-500 to-pink-500
+                                hover:from-blue-600 hover:via-purple-600 hover:to-pink-600
+                                transition-all duration-300
+                                text-white text-center"
+                        >
+                            Contact Me
+                        </a>
+
+                        <a
+                            href="https://rxresu.me/rocketmx_/cv-nestor-devsecops"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"
+                        >
+                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-white text-center">
+                                Download CV
                             </span>
-                        </button>
+                        </a>
                         {/* <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white">
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                                 <a
