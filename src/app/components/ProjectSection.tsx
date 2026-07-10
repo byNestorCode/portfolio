@@ -11,7 +11,7 @@ const ProjectsData = [
         description: "Public information portal providing real-time access to electoral reports, agreements, and official PREP documentation.",
         image: "/images/projects/micrositioprep.png",
         tag: ["All", "Web"],
-        git: "https://github.com/byNestorCode",
+        git: "https://github.com/ieeags",
         site: "https://prep.ieeags.mx/",
         technologies: [
             {
@@ -43,7 +43,7 @@ const ProjectsData = [
         description: "Internal platform for managing electoral sanctions, financial remittances, and regulatory compliance processes.",
         image: "/images/projects/sisare.png",
         tag: ["All", "Web"],
-        git: "https://github.com/byNestorCode",
+        git: "https://github.com/ieeags",
         site: "https://sisare.ieeags.mx/",
         technologies: [
             {
@@ -129,7 +129,7 @@ const ProjectsData = [
         description: "Official institutional platform providing citizens with electoral information, transparency resources, and public services.",
         image: "/images/projects/2.png",
         tag: ["All", "Web"],
-        git: "https://github.com/byNestorCode",
+        git: "https://github.com/ieeags",
         site: "https://ieeags.mx/",
         technologies: [
             {
@@ -156,7 +156,7 @@ const ProjectsData = [
         description: "High-availability electoral system that successfully processed more than 22 million public requests during election day.",
         image: "/images/projects/3.png",
         tag: ["All", "Web"],
-        git: "https://github.com/byNestorCode",
+        git: "https://github.com/ieeags",
         site: "https://prep2024.ieeags.mx/",
         technologies: [
             {
@@ -249,7 +249,7 @@ const ProjectsData = [
         description: "Mobile application used to digitize polling station records, accelerating data collection during statewide elections.",
         image: "/images/projects/6-prepcasilla-min.png",
         tag: ["All", "App"],
-        git: "https://github.com/byNestorCode",
+        git: "https://github.com/ieeags",
         site: "/",
         technologies: [
             {
