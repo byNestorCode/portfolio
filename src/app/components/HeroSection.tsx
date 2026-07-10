@@ -12,18 +12,14 @@ const HeroSection = () => {
                 <div className="col-span-7 place-self-center text-center sm:text-left order-2 xl:order-none drop-shadow-[0_0_30px_rgba(0,0,0,.70)]">
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-center">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                            Hi there! I&apos;m{""}
+                            Building secure, scalable cloud platforms.
                         </span>
                         <br />
                         <TypeAnimation
                             sequence={[
-                                'Néstor 🚀',
+                                '👋🏼 Hi there!',
                                 1000,
-                                'Fullstack Developer 🔃',
-                                1000,
-                                'Project Manager 📊',
-                                1000,
-                                '⚙️ DevSecOps',
+                                `I'm Néstor 🚀`,
                                 1000,
                                 'Robotics 🤖 God',
                                 1000,
@@ -40,7 +36,7 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl text-center max-w-[80%] mx-auto">
-                        Software Engineer specializing in scalable web applications and modern system architecture.
+                        Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                         <a href="mailto:hola@nestorvazquez.mx?subject=✅🚀%20We%20want%20you!" target="_blank" rel="noopener noreferrer" className="
@@ -64,6 +60,16 @@ const HeroSection = () => {
                         >
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-white text-center">
                                 Download CV
+                            </span>
+                        </a>
+                        <a
+                            href="https://github.com/bynestorcode"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-slate-500 via-purple-500 to-green-500"
+                        >
+                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-white text-center">
+                                View GitHub
                             </span>
                         </a>
                         {/* <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white">
