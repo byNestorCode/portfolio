@@ -11,7 +11,7 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-12">
                 <div className="col-span-7 place-self-center text-center sm:text-left order-2 xl:order-none drop-shadow-[0_0_30px_rgba(0,0,0,.70)]">
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-center">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-purple-400 to-pink-600">
                             Building secure, scalable cloud platforms.
                         </span>
                         <br />
