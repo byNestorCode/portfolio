@@ -76,9 +76,12 @@ const AboutSection: React.FC = () => {
                 <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-3">
                     About Me
                 </h2>
-                <p className="text-gray-400 max-w-2xl mx-auto">
-                    Building scalable systems, leading technical projects,
-                    and delivering high-quality digital solutions.
+                <p className="text-gray-400 max-w-2xl mx-auto text-left">
+                    I specialize in designing secure, scalable, and highly available cloud platforms that enable engineering teams to deliver software with confidence.
+                </p>
+                <br />
+                <p className='text-gray-400 max-w-2xl mx-auto text-left'>
+                    My experience spans Platform Engineering, DevSecOps, Cloud Infrastructure, Linux administration, CI/CD automation, and software engineering, with a strong focus on mission-critical systems.
                 </p>
             </div>
 
@@ -86,7 +89,7 @@ const AboutSection: React.FC = () => {
                 <div className="w-full flex flex-col gap-2 justify-center items-center">
                     <Card className="w-full md:max-w-[100%] lg:min-w-[100%] col-span-12 md:col-span-12 rounded-2xl bg-slate-950 bg-opacity-65  backdrop-blur-md border border-white/10 shadow-lg text-white">
                         <CardHeader className="mt-2 pb-0 pt-2 px-4 flex-col items-center">
-                            <p className="text-2xl text-bold uppercase font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Experience</p>
+                            <p className="text-2xl text-bold uppercase font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Career Highlights</p>
                             <small className="text-default-500">a brief summary of my career</small>
                             {/* <h4 className="font-tiny text-large">Jobs</h4> */}
                         </CardHeader>
@@ -97,13 +100,22 @@ const AboutSection: React.FC = () => {
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
-                                        <TableCell>4+ years as DevSecOps</TableCell>
+                                        <TableCell className="text-center text-slate-200"><span className='font-bold text-white'>🏆 22M+</span> Public Requests Served</TableCell>
                                     </TableRow>
                                     <TableRow key="2">
-                                        <TableCell>2 years as Project Manager in LABSOL and DEDICA Fundation</TableCell>
+                                        <TableCell className="text-center text-slate-200"><span className='font-bold text-white'>🏆 117</span> Professionals Coordinated</TableCell>
                                     </TableRow>
                                     <TableRow key="3">
-                                        <TableCell>1 year as coordinator at a government institute</TableCell>
+                                        <TableCell className="text-center text-slate-200"><span className='font-bold text-white'>🏆 30+</span> Containerized Deployments</TableCell>
+                                    </TableRow>
+                                    <TableRow key="4">
+                                        <TableCell className="text-center text-slate-200"><span className='font-bold text-white'>🏆 5+</span> Years Experience</TableCell>
+                                    </TableRow>
+                                    <TableRow key="5">
+                                        <TableCell className="text-center text-slate-200"><span className='font-bold text-white'>🏆 AWS</span> Hybrid Infrastructure</TableCell>
+                                    </TableRow>
+                                    <TableRow key="6">
+                                        <TableCell className="text-center text-slate-200"><span className='font-bold text-white'>🏆 6</span> Production Environments</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>
@@ -213,7 +225,14 @@ const AboutSection: React.FC = () => {
                                         width={50}
                                     />
                                 </Tooltip>
-                                
+                                <Tooltip content="zabbix" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="zabbix"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/idMqLPAYOn/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1778041092273"
+                                        width={50}
+                                    />
+                                </Tooltip>
                             </div>
                         </CardBody>
                     </Card>
@@ -224,13 +243,10 @@ const AboutSection: React.FC = () => {
                         Profile
                     </p>
                     <p className="text-gray-300 leading-relaxed text-lg">
-                        Software Engineer specialized in designing and developing
-                        scalable, high-performance web systems.
+                        Passionate about building infrastructure that enables engineering teams to move faster without compromising security or reliability.
                     </p>
                     <p className="text-gray-400 leading-relaxed">
-                        Strong background in infrastructure, security,
-                        and project leadership, focused on delivering
-                        reliable, production-ready solutions.
+                        Experienced in designing high-availability architectures, implementing DevSecOps practices, automating deployments, and leading engineering teams delivering mission-critical systems.
                     </p>
                     {/* <DecryptedText
                             text="I'm a young technology enthusiast, and I'm always asking myself: how does it work? In my mind, I've always taken things apart to figure out how they work. I love a  challenge and I'm constantly looking to learn every day. I work in DevSecOps and I'm a growing data analyst—maybe even I'm an AI?"
@@ -244,23 +260,43 @@ const AboutSection: React.FC = () => {
                         <h4 className="text-xl font-semibold text-white">
                             Core Strengths
                         </h4>
-                        <ul className="space-y-3 text-gray-300 flex flex-col items-center">
-                            <li className="flex items-center gap-2">
-                                <span>🚀</span> System Architecture & Scalability
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span>🔐</span> Security-first Development
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span>📊</span> Technical Project Leadership
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span>⚙️</span> Cloud & DevOps Automation
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span>🧠</span> AI & Workflow Optimization
-                            </li>
-                        </ul>
+                        <Table
+                            aria-label="Core Strengths"
+                            removeWrapper
+                            classNames={{
+                                table: "bg-transparent",
+                                th: "hidden",
+                                td: "border-none text-gray-300 text-center",
+                            }}
+                            selectionMode="single"
+                        >
+                            <TableHeader>
+                                <TableColumn>Column 1</TableColumn>
+                                <TableColumn>Column 2</TableColumn>
+                            </TableHeader>
+
+                            <TableBody>
+                                <TableRow key="1">
+                                    <TableCell>☁️ Cloud Architecture</TableCell>
+                                    <TableCell>🏛️ Platform Engineering</TableCell>
+                                </TableRow>
+
+                                <TableRow key="2">
+                                    <TableCell>🔐 Infrastructure Security</TableCell>
+                                    <TableCell>⚙️ DevSecOps</TableCell>
+                                </TableRow>
+
+                                <TableRow key="3">
+                                    <TableCell>📊 Site Reliability</TableCell>
+                                    <TableCell>♾️ CI/CD Automation</TableCell>
+                                </TableRow>
+
+                                <TableRow key="4">
+                                    <TableCell>📺 Observability</TableCell>
+                                    <TableCell>🧠 Technical Leadership</TableCell>
+                                </TableRow>
+                            </TableBody>
+                        </Table>
                     </div>
                     {/* STATS */}
                     <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10">
