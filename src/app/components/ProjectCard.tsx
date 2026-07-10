@@ -14,13 +14,14 @@ interface Technologies {
 interface ProjectCardProps {
     imgUrl: string;
     title: string;
+    subtitle: string;
     description: string;
     gitUrl?: string,
     previewUrl?: string,
     technologies: Technologies[],
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, gitUrl, previewUrl, technologies }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, subtitle, description, gitUrl, previewUrl, technologies }) => {
 
     const isPreviewDisabled = previewUrl === "/";
     const isGitDisabled = gitUrl === "/";
@@ -71,6 +72,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, g
                 <div>
                     <h5 className="text-xl font-semibold mb-2">
                         {title}
+                    </h5>
+                    <h5 className="text-sm font-semibold mb-2 text-gray-500">
+                        {subtitle}
                     </h5>
                     <p className="text-[#ADB7BE] text-sm leading-relaxed">
                         {description}

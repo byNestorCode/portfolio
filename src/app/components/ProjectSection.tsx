@@ -7,7 +7,8 @@ const ProjectsData = [
     {
         id: 12,
         title: "Micrositio informativo PREP",
-        description: "Permite la transparencia haciendo públicos los acuerdos, informes y actividades.",
+        subtitle: "Electoral Transparency Platform",
+        description: "Public information portal providing real-time access to electoral reports, agreements, and official PREP documentation.",
         image: "/images/projects/micrositioprep.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
@@ -38,7 +39,8 @@ const ProjectsData = [
     {
         id: 11,
         title: "SISARE",
-        description: "Sistema de Sanciones y Remanentes",
+        subtitle: "Regulatory Management System",
+        description: "Internal platform for managing electoral sanctions, financial remittances, and regulatory compliance processes.",
         image: "/images/projects/sisare.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
@@ -69,7 +71,8 @@ const ProjectsData = [
     {
         id: 10,
         title: "Infinity Foundation",
-        description: "A landing page for a science and technology foundation that benefits educational institutions.",
+        subtitle: "Nonprofit Digital Platform",
+        description: "Modern web platform promoting science, technology, and educational initiatives through accessible digital experiences.",
         image: "/images/projects/infoundation.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
@@ -95,7 +98,8 @@ const ProjectsData = [
     {
         id: 9,
         title: "Infinity Network",
-        description: "In progress...",
+        subtitle: "Engineering Portfolio",
+        description: "Modern engineering portfolio documenting projects, architecture decisions, and platform engineering practices.",
         image: "/images/projects/1-in-min.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
@@ -121,7 +125,8 @@ const ProjectsData = [
     {
         id: 8,
         title: "Institutional website: IEE",
-        description: "The site allows citizens to access electoral information relevant to the state of Aguascalientes.",
+        subtitle: "Government Digital Platform",
+        description: "Official institutional platform providing citizens with electoral information, transparency resources, and public services.",
         image: "/images/projects/2.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
@@ -147,7 +152,8 @@ const ProjectsData = [
     {
         id: 7,
         title: "Preliminary Election Results Program (PREP)",
-        description: "The system for capturing and aggregating votes for the Aguascalientes elections",
+        subtitle: "Mission-Critical Electoral Platform",
+        description: "High-availability electoral system that successfully processed more than 22 million public requests during election day.",
         image: "/images/projects/3.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
@@ -172,8 +178,9 @@ const ProjectsData = [
     },
     {
         id: 6,
-        title: "Website: Piixan",
-        description: "A GRP-ERP to company Piixan SA de CV based in Odoo",
+        title: "Piixan",
+        subtitle: "Enterprise ERP Platform",
+        description: "Custom Odoo-based ERP solution streamlining business operations, inventory management, and enterprise workflows.",
         image: "/images/projects/4-piixan-min.png",
         tag: ["All", "Web", "Odoo"],
         git: "https://github.com/byNestorCode",
@@ -193,8 +200,9 @@ const ProjectsData = [
     },
     {
         id: 5,
-        title: "Website: spina jawelry",
-        description: "An ecommerce based in Odoo",
+        title: "Spina Jawelry",
+        subtitle: "E-Commerce Platform",
+        description: "Custom Odoo e-commerce solution focused on online sales, inventory synchronization, and customer experience.",
         image: "/images/projects/5-spina-min.png",
         tag: ["All", "Web", "Odoo"],
         git: "https://github.com/byNestorCode",
@@ -214,8 +222,9 @@ const ProjectsData = [
     },
     {
         id: 4,
-        title: "Website: Dr. To Dr. Academy",
-        description: "An e-learn plataform based in Odoo",
+        title: "Dr. To Dr. Academy",
+        subtitle: "Learning Management Platform",
+        description: "Odoo-based e-learning platform providing online education, course management, and student engagement tools.",
         image: "/images/projects/9-drtodracademy.png",
         tag: ["All", "Web", "Odoo"],
         git: "https://github.com/byNestorCode",
@@ -235,8 +244,9 @@ const ProjectsData = [
     },
     {
         id: 3,
-        title: "App: PREP Casilla",
-        description: "An app to digitise voting records from polling station locations",
+        title: "PREP Casilla",
+        subtitle: "Election Operations Mobile App",
+        description: "Mobile application used to digitize polling station records, accelerating data collection during statewide elections.",
         image: "/images/projects/6-prepcasilla-min.png",
         tag: ["All", "App"],
         git: "https://github.com/byNestorCode",
@@ -256,8 +266,9 @@ const ProjectsData = [
     },
     {
         id: 2,
-        title: "Repo: Solana Docker Dev",
-        description: "This 🐙 repo is to help devs in their 🪟 windows 💻 development environment.",
+        title: "Solana Docker Dev",
+        subtitle: "Developer Experience",
+        description: "Containerized Solana development environment simplifying blockchain onboarding.",
         image: "/images/projects/7-reposolana-min.png",
         tag: ["All", "Repo"],
         git: "https://github.com/byNestorCode/solana-docker-dev",
@@ -282,8 +293,9 @@ const ProjectsData = [
     },
     {
         id: 1,
-        title: "Repo: DB Containers",
-        description: "A repository to help you in the creation of a database server with an administrator through phpmyadmin. In the future this repo will manage some types of db.",
+        title: "DB Containers",
+        subtitle: "Infrastructure Automation",
+        description: "Reusable Docker database environments for standardized development workflows.",
         image: "/images/projects/8-repodb-min.png",
         tag: ["All", "Repo"],
         git: "https://github.com/byNestorCode/db-containers",
@@ -319,7 +331,7 @@ const ProjectSection: React.FC = () => {
     return (
         <section className='mt-18 mb-12 min-h-screen' id='projects'>
             <h2 className='mx-auto text-4xl md:text-5xl font-extrabold w-full max-w-xl md:max-w-2xl lg:max-w-3xl rounded-2xl bg-slate-950 bg-opacity-65 backdrop-blur-md border border-white/10 shadow-lg px-6 py-6 text-center'>
-                Check Out My Projects
+                Featured Engineering Projects
             </h2>
             <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
                 {/* <button className='rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer'>
@@ -359,6 +371,7 @@ const ProjectSection: React.FC = () => {
                     <ProjectCard
                         key={project.id}
                         title={project.title}
+                        subtitle={project.subtitle}
                         description={project.description}
                         imgUrl={project.image}
                         gitUrl={project.git}
