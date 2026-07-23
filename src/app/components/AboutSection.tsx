@@ -241,6 +241,14 @@ const AboutSection: React.FC = () => {
                                         width={50}
                                     />
                                 </Tooltip>
+                                <Tooltip content="Phantom" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="Phantom"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/idf5VaJxyT/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1742483111160"
+                                        width={50}
+                                    />
+                                </Tooltip>
                             </div>
                         </CardBody>
                     </Card>
