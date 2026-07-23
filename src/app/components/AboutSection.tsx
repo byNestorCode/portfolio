@@ -233,6 +233,14 @@ const AboutSection: React.FC = () => {
                                         width={50}
                                     />
                                 </Tooltip>
+                                <Tooltip content="kubernetes" showArrow={true} color='foreground'>
+                                    <Image
+                                        alt="k8s"
+                                        className="rounded-full object-cover"
+                                        src="https://cdn.brandfetch.io/idJMXjfNh8/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1693285846319"
+                                        width={50}
+                                    />
+                                </Tooltip>
                             </div>
                         </CardBody>
                     </Card>
