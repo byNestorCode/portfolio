@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://nestorvazquez.mx/'),
   icons: {
     icon: './saturno.ico',
-    apple: 'https://www.nestorvazquez.mx/images/nestor.png',
-    shortcut: "https://www.nestorvazquez.mx/images/nestor.png",
+    apple: 'https://www.nestorvazquez.mx/images/apple-touch-icon.png',
+    shortcut: "https://www.nestorvazquez.mx/images/apple-touch-icon.png",
   },
   title: "👋 Welcome friend | Néstor Vázquez",
   description: "Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.",
