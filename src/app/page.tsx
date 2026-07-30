@@ -11,21 +11,33 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://nestorvazquez.mx/'),
   icons: {
     icon: './saturno.ico',
+    apple: 'https://0.gravatar.com/avatar/d90353701b3af920d04f475c8ae336bba5e93e1f99b0a5cb766de3d87ae7bfd2?size=256',
+    shortcut: "https://0.gravatar.com/avatar/d90353701b3af920d04f475c8ae336bba5e93e1f99b0a5cb766de3d87ae7bfd2?size=256",
   },
-  title: "👋 Welcome friend",
-  description: "Check my projects and follow me!",
+  title: "👋 Welcome friend | Néstor Vázquez",
+  description: "Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.",
   robots: 'index, follow',
+  keywords: [],
+  authors: [
+    { 
+      name: 'byNestorCode', 
+      url: 'https://github.com/bynestorcode' 
+    },
+  ],
+  creator: 'byNestorCode',
+  publisher: 'byNestorCode',
   openGraph: {
     title: '👋 Welcome friend',
-    description: 'Check my projects and follow me!',
+    description: 'Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.',
     url: 'https://nestorvazquez.mx',
-    images: ['https://nestorvazquez.mx/images/nestor.png']
+    images: ['https://nestorvazquez.mx/images/og-image.png'],
+    siteName: '👋 Welcome friend | Néstor Vázquez'
   },
   twitter: {
     card: 'summary_large_image',
     title: '👋 Welcome friend',
-    description: 'Check my projects and follow me!',
-    images: 'https://nestorvazquez.mx/images/nestor.png'
+    description: 'Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.',
+    images: 'https://nestorvazquez.mx/images/og-image.png'
   }
 };
 
