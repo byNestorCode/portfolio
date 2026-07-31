@@ -18,31 +18,59 @@ export const metadata: Metadata = {
   description: "Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.",
   robots: 'index, follow',
   keywords: [
+    // Personal Brand
+    'Néstor Vázquez',
+    'Néstor Vázquez Portfolio',
+    'Néstor Vázquez DevSecOps',
+    'Néstor Vázquez Platform Engineer',
     'Néstor Vázquez México',
     'Nestor Vazquez México',
     'nestor vazquez méxico',
     'Nestor Mexico',
+
+    // Core Roles
     'Platform Engineer',
     'DevSecOps Engineer',
     'Site Reliability Engineer',
     'Cloud Engineer',
-    'Kubernetes',
+    'Infrastructure Engineer',
+
+    // Cloud & DevOps
+    'Cloud Infrastructure',
+    'Platform Engineering',
+    'Infrastructure as Code',
     'Terraform',
+    'Kubernetes',
     'Docker',
     'AWS',
-    'Cloud Infrastructure',
-    'Infrastructure as Code',
     'CI/CD',
+    'GitHub Actions',
+    'Cloud Native',
+
+    // Reliability & Security
     'Cloud Security',
-    'Platform Engineering',
+    'Observability',
+    'High Availability',
+    'Platform Reliability',
+    'Infrastructure Automation',
+    'Mission Critical Systems',
+
+    // Development
     'Python',
     'Django',
     'Next.js',
-    'Mexico',
-    'DevSecOps Mexico',
-    'Cloud Engineer Mexico',
+    'TypeScript',
+
+    // Geographic SEO
     'Platform Engineer Mexico',
-    'SRE Mexico'
+    'DevSecOps Engineer Mexico',
+    'Cloud Engineer Mexico',
+    'Site Reliability Engineer Mexico',
+    'Mexican Platform Engineer',
+    'LATAM Platform Engineer',
+    'Remote DevSecOps Engineer',
+    'Remote Platform Engineer',
+    'SRE Mexico',
   ],
   authors: [
     { 
