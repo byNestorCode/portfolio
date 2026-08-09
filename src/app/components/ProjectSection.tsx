@@ -73,7 +73,7 @@ const ProjectsData = [
         title: "Infinity Foundation",
         subtitle: "Nonprofit Digital Platform",
         description: "Modern web platform promoting science, technology, and educational initiatives through accessible digital experiences.",
-        image: "/images/projects/infoundation.png",
+        image: "/images/projects/infoundation_.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
         site: "https://foundation.infinitynetwork.mx/",
