@@ -76,7 +76,7 @@ const ProjectsData = [
         image: "/images/projects/infoundation.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
-        site: "/",
+        site: "https://foundation.infinitynetwork.mx/",
         technologies: [
             {
                 name: "Next.js",
@@ -103,7 +103,7 @@ const ProjectsData = [
         image: "/images/projects/1-in-min.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
-        site: "/",
+        site: "https://infinitynetwork.mx/",
         technologies: [
             {
                 name: "Next.js",
