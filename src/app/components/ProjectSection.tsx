@@ -7,8 +7,8 @@ const ProjectsData = [
     {
         id: 13,
         title: "Voto en el Extranjero",
-        subtitle: "Electoral Transparency Platform",
-        description: "Public information portal providing real-time access to electoral reports, agreements, and official PREP documentation.",
+        subtitle: "Overseas Voting Platform",
+        description: "Digital electoral platform designed to provide citizens living abroad with accessible information and services related to overseas voting, supporting transparency and informed participation throughout the electoral process.",
         image: "/images/projects/10-votoextranjero.png",
         tag: ["All", "Web"],
         git: "https://github.com/ieeags",
@@ -20,9 +20,14 @@ const ProjectsData = [
                 logo: "https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1dxbfHSJFAPEGdCLU4o5B"
             },
             {
-                name: "Python",
-                color: "warning",
-                logo: "https://cdn.brandfetch.io/idbpOFBgcc/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1772193840871"
+                name: "TypeScript",
+                color: "primary",
+                logo: "https://cdn.brandfetch.io/idKX_Hb7va/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1772354699784"
+            },
+            {
+                name: "Tailwind",
+                color: "primary",
+                logo: "https://cdn.brandfetch.io/idMNEQh7-0/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1687779047045"
             },
             {
                 name: "Docker",
@@ -34,8 +39,8 @@ const ProjectsData = [
     {
         id: 9,
         title: "Micrositio informativo PREP",
-        subtitle: "Electoral Transparency Platform",
-        description: "Public information portal providing real-time access to electoral reports, agreements, and official PREP documentation.",
+        subtitle: "Electoral Information Platform",
+        description: "Public-facing platform providing citizens with accessible information about the Preliminary Election Results Program, including electoral results, documentation, and key information about the process.",
         image: "/images/projects/micrositioprep.png",
         tag: ["All", "Web"],
         git: "https://github.com/ieeags",
@@ -66,8 +71,8 @@ const ProjectsData = [
     {
         id: 7,
         title: "SISARE",
-        subtitle: "Regulatory Management System",
-        description: "Internal platform for managing electoral sanctions, financial remittances, and regulatory compliance processes.",
+        subtitle: "Electoral Compliance Management System",
+        description: "Internal management platform for administering electoral sanctions, financial obligations, regulatory processes, and compliance workflows.",
         image: "/images/projects/sisare.png",
         tag: ["All", "Web"],
         git: "https://github.com/ieeags",
@@ -98,8 +103,8 @@ const ProjectsData = [
     {
         id: 10,
         title: "Infinity Foundation",
-        subtitle: "Nonprofit Digital Platform",
-        description: "Modern web platform promoting science, technology, and educational initiatives through accessible digital experiences.",
+        subtitle: "Digital Platform for Social Impact",
+        description: "Digital platform for a nonprofit initiative focused on expanding access to technology, education, and digital opportunities for students and communities.",
         image: "/images/projects/infoundation_.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
@@ -125,8 +130,8 @@ const ProjectsData = [
     {
         id: 12,
         title: "Infinity Network",
-        subtitle: "Engineering Portfolio",
-        description: "Modern engineering portfolio documenting projects, architecture decisions, and platform engineering practices.",
+        subtitle: "Technology & Innovation Platform",
+        description: "Technology and innovation platform focused on developing digital solutions, fostering technical communities, and creating opportunities for learning, collaboration, and digital transformation.",
         image: "/images/projects/1-in-min.png",
         tag: ["All", "Web"],
         git: "https://github.com/byNestorCode",
@@ -147,13 +152,18 @@ const ProjectsData = [
                 color: "primary",
                 logo: "https://cdn.brandfetch.io/idMNEQh7-0/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1687779047045"
             },
+            {
+                name: "Docker",
+                color: "default",
+                logo: "https://cdn.brandfetch.io/id5_eOiB6T/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1707508247180"
+            },
         ]
     },
     {
         id: 8,
-        title: "Institutional website: IEE",
-        subtitle: "Government Digital Platform",
-        description: "Official institutional platform providing citizens with electoral information, transparency resources, and public services.",
+        title: "IEE Institutional Website",
+        subtitle: "GElectoral Authority Digital Platform",
+        description: "Official digital platform for the Instituto Estatal Electoral, providing citizens with electoral information, institutional resources, transparency content, and access to public services.",
         image: "/images/projects/2.png",
         tag: ["All", "Web"],
         git: "https://github.com/ieeags",
@@ -178,9 +188,9 @@ const ProjectsData = [
     },
     {
         id: 11,
-        title: "Preliminary Election Results Program (PREP)",
-        subtitle: "Mission-Critical Electoral Platform",
-        description: "High-availability electoral system that successfully processed more than 22 million public requests during election day.",
+        title: "Preliminary Election Results Program",
+        subtitle: "Mission-Critical Electoral System",
+        description: "High-availability electoral results platform that processed more than 22 million public requests during election day, providing citizens with timely and reliable access to preliminary election results.",
         image: "/images/projects/3.png",
         tag: ["All", "Web"],
         git: "https://github.com/ieeags",
@@ -273,7 +283,7 @@ const ProjectsData = [
         id: 3,
         title: "PREP Casilla",
         subtitle: "Election Operations Mobile App",
-        description: "Mobile application used to digitize polling station records, accelerating data collection during statewide elections.",
+        description: "Mobile application designed to digitize polling station records and streamline the collection and transmission of electoral information during statewide elections.",
         image: "/images/projects/6-prepcasilla-min.png",
         tag: ["All", "App"],
         git: "https://github.com/ieeags",
