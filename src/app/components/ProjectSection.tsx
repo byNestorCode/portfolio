@@ -5,7 +5,34 @@ import ProjectTag from './ProjectTag';
 
 const ProjectsData = [
     {
-        id: 12,
+        id: 13,
+        title: "Voto en el Extranjero",
+        subtitle: "Electoral Transparency Platform",
+        description: "Public information portal providing real-time access to electoral reports, agreements, and official PREP documentation.",
+        image: "/images/projects/10-votoextranjero.png",
+        tag: ["All", "Web"],
+        git: "https://github.com/ieeags",
+        site: "https://stg-votoextranjero.ieeags.mx/",
+        technologies: [
+            {
+                name: "Next.js",
+                color: "default",
+                logo: "https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+            },
+            {
+                name: "Python",
+                color: "warning",
+                logo: "https://cdn.brandfetch.io/idbpOFBgcc/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1772193840871"
+            },
+            {
+                name: "Docker",
+                color: "default",
+                logo: "https://cdn.brandfetch.io/id5_eOiB6T/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1707508247180"
+            },
+        ]
+    },
+    {
+        id: 9,
         title: "Micrositio informativo PREP",
         subtitle: "Electoral Transparency Platform",
         description: "Public information portal providing real-time access to electoral reports, agreements, and official PREP documentation.",
@@ -37,7 +64,7 @@ const ProjectsData = [
         ]
     },
     {
-        id: 11,
+        id: 7,
         title: "SISARE",
         subtitle: "Regulatory Management System",
         description: "Internal platform for managing electoral sanctions, financial remittances, and regulatory compliance processes.",
@@ -96,7 +123,7 @@ const ProjectsData = [
         ]
     },
     {
-        id: 9,
+        id: 12,
         title: "Infinity Network",
         subtitle: "Engineering Portfolio",
         description: "Modern engineering portfolio documenting projects, architecture decisions, and platform engineering practices.",
@@ -150,7 +177,7 @@ const ProjectsData = [
         ]
     },
     {
-        id: 7,
+        id: 11,
         title: "Preliminary Election Results Program (PREP)",
         subtitle: "Mission-Critical Electoral Platform",
         description: "High-availability electoral system that successfully processed more than 22 million public requests during election day.",
