@@ -15,7 +15,10 @@ export const metadata: Metadata = {
     apple: 'https://www.nestorvazquez.mx/images/apple-touch-icon.png',
     shortcut: "https://www.nestorvazquez.mx/images/apple-touch-icon.png",
   },
-  title: "👋 Welcome friend | Néstor Vázquez",
+  alternates: {
+    canonical: "/",
+  },
+  title: "Néstor Vázquez | Platform Engineer, DevSecOps & SRE en México",
   description: "Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.",
   robots: 'index, follow',
   keywords: [
@@ -82,15 +85,15 @@ export const metadata: Metadata = {
   creator: 'byNestorCode',
   publisher: 'byNestorCode',
   openGraph: {
-    title: '👋 Welcome friend',
+    title: 'Néstor Vázquez | Platform Engineer, DevSecOps & SRE en México',
     description: 'Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.',
     url: 'https://nestorvazquez.mx',
     images: ['https://nestorvazquez.mx/images/og-image.png'],
-    siteName: '👋 Welcome friend | Néstor Vázquez'
+    siteName: 'Néstor Vázquez | Platform Engineering'
   },
   twitter: {
     card: 'summary_large_image',
-    title: '👋 Welcome friend',
+    title: 'Néstor Vázquez | Platform Engineer, DevSecOps & SRE en México',
     description: 'Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.',
     images: 'https://nestorvazquez.mx/images/og-image.png'
   }
