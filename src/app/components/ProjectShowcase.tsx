@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, ExternalLink, FolderGit2, Github, LockKeyhole } from "lucide-react";
+import { ArrowUpRight, ExternalLink, FolderGit2, Github, LockKeyhole, Pin } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Image } from "@heroui/react";
 import { ProjectsData } from "./ProjectSection";
@@ -114,7 +114,12 @@ export default function ProjectShowcase() {
                 </div>
 
                 <article className="mt-8 grid overflow-hidden rounded-3xl border border-cyan-300/20 bg-slate-950/70 shadow-2xl shadow-cyan-950/20 backdrop-blur-md lg:grid-cols-2">
-                    <div className="min-h-72 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(90deg, rgba(2, 6, 23, 0.05), rgba(2, 6, 23, 0.55)), url(${featuredProject.image})` }} />
+                    <div className="relative min-h-72 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(90deg, rgba(2, 6, 23, 0.05), rgba(2, 6, 23, 0.55)), url(${featuredProject.image})` }}>
+                        <span className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full border border-amber-200/50 bg-slate-950/85 px-3.5 py-2 text-xs font-bold uppercase tracking-[0.12em] text-amber-100 shadow-[0_0_20px_rgba(251,191,36,0.25)] backdrop-blur-md">
+                            <Pin className="size-3.5 text-amber-300" aria-hidden="true" />
+                            Latest project
+                        </span>
+                    </div>
                     <div className="p-7 sm:p-10">
                         <p className="text-sm font-medium text-cyan-200">Featured case study · {impactByProjectId[featuredProject.id]}</p>
                         <h3 className="mt-3 text-3xl font-bold">{featuredProject.title}</h3>
