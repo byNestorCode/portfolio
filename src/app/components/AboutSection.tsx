@@ -51,10 +51,10 @@ const AboutSection = () => {
             <div className="mx-auto max-w-7xl">
                 <div className="mb-12 max-w-3xl">
                     <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">About me</p>
-                    <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                    <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl drop-shadow-[0_0_30px_rgba(0,0,0,.70)]">
                         Building the foundation for <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-violet-400 to-pink-500">confident delivery.</span>
                     </h2>
-                    <p className="mt-6 text-base leading-8 text-slate-300 sm:text-lg">
+                    <p className="mt-6 text-base leading-8 text-slate-300 sm:text-lg drop-shadow-[0_0_30px_rgba(0,0,0,.70)]">
                         I&apos;m a Platform Engineer focused on secure, scalable cloud systems. I help teams ship faster by making infrastructure reliable, automation deliberate, and security part of the way software is delivered.
                     </p>
                 </div>
