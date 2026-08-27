@@ -29,7 +29,7 @@ export default function HeroShowcase() {
                     </p>
 
                     <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-center">
-                        <a href="mailto:hola@nestorvazquez.mx?subject=Let%27s%20work%20together" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-violet-500 to-pink-500 px-6 py-3 text-sm font-bold text-slate-900 shadow-[0_0_30px_rgba(103,232,249,0.28)] transition hover:scale-[1.02] hover:shadow-[0_0_38px_rgba(167,139,250,0.4)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200">
+                        <a href="mailto:hola@nestorvazquez.mx?subject=Let%27s%20work%20together" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-violet-500 to-pink-500 px-6 py-3 text-sm font-bold text-slate-950 shadow-[0_0_30px_rgba(103,232,249,0.28)] transition hover:scale-[1.02] hover:shadow-[0_0_38px_rgba(167,139,250,0.4)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200">
                             Let&apos;s work together <ArrowUpRight className="size-4" aria-hidden="true" />
                         </a>
                         <a href="#projects" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 bg-slate-950/45 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition hover:border-cyan-200/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200">
