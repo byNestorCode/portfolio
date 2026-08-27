@@ -1,7 +1,7 @@
 import HeroSection from "./components/HeroSection";
 import AboutSection from './components/AboutSection';
 import { Metadata } from 'next';
-import ProjectSection from './components/ProjectSection';
+import ProjectShowcase from './components/ProjectShowcase';
 import GlassmorphNavbar from "./components/GlassmorphNavbar";
 import Providers from "./components/Providers";
 import Grainient from "./components/Grainient";
@@ -104,7 +104,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <HeroSection />
           <AboutSection />
-          <ProjectSection />
+          <ProjectShowcase />
         </div>
       </main>
     </Providers>
