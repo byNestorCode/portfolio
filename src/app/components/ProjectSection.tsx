@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import ProjectCard from './ProjectCard';
 import ProjectTag from './ProjectTag';
 
-const ProjectsData = [
+export const ProjectsData = [
     {
         id: 13,
         title: "Voto en el Extranjero",
@@ -162,7 +162,7 @@ const ProjectsData = [
     {
         id: 8,
         title: "IEE Institutional Website",
-        subtitle: "GElectoral Authority Digital Platform",
+        subtitle: "Electoral Authority Digital Platform",
         description: "Official digital platform for the Instituto Estatal Electoral, providing citizens with electoral information, institutional resources, transparency content, and access to public services.",
         image: "/images/projects/2.png",
         tag: ["All", "Web"],
