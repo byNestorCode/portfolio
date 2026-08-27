@@ -97,7 +97,7 @@ export default function ProjectShowcase() {
                 <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
                     <div className="max-w-3xl drop-shadow-[0_0_30px_rgba(0,0,0,.70)]">
                         <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">Selected engineering work</p>
-                        <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">Systems that serve people, teams, and critical operations.</h2>
+                        <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">Systems that serve <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-violet-400 to-pink-500">people, teams, and critical operations.</span></h2>
                         <p className="mt-5 text-base leading-8 text-slate-300 sm:text-lg">A curated selection of civic-tech platforms, cloud systems, and developer tooling built with reliability and practical impact in mind.</p>
                     </div>
                     <a href="https://github.com/bynestorcode" target="_blank" rel="noreferrer" aria-label="View more projects on Néstor Vázquez's GitHub profile" className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-full border border-cyan-200/45 bg-cyan-300/15 px-5 py-2.5 text-sm font-semibold text-cyan-50 shadow-[0_0_22px_rgba(103,232,249,0.16)] transition hover:border-cyan-100 hover:bg-cyan-200/25 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200">
@@ -113,23 +113,25 @@ export default function ProjectShowcase() {
                     })}
                 </div>
 
-                <article className="mt-8 grid overflow-hidden rounded-3xl border border-cyan-300/20 bg-slate-950/70 shadow-2xl shadow-cyan-950/20 backdrop-blur-md lg:grid-cols-2">
-                    <div className="relative min-h-72 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(90deg, rgba(2, 6, 23, 0.05), rgba(2, 6, 23, 0.55)), url(${featuredProject.image})` }}>
-                        <span className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full border border-amber-200/50 bg-slate-950/85 px-3.5 py-2 text-xs font-bold uppercase tracking-[0.12em] text-amber-100 shadow-[0_0_20px_rgba(251,191,36,0.25)] backdrop-blur-md">
-                            <Pin className="size-3.5 text-amber-300" aria-hidden="true" />
-                            Latest project
-                        </span>
-                    </div>
-                    <div className="p-7 sm:p-10">
-                        <p className="text-sm font-medium text-cyan-200">Featured case study · {impactByProjectId[featuredProject.id]}</p>
-                        <h3 className="mt-3 text-3xl font-bold">{featuredProject.title}</h3>
-                        <p className="mt-5 leading-7 text-slate-300">{featuredProject.description}</p>
-                        <div className="mt-6 flex flex-wrap gap-2">
-                            {featuredProject.technologies.map((technology) => <TechnologyPill key={technology.name} technology={technology} />)}
+                {(filter === "All" || filter === "Web") && (
+                    <article className="mt-8 grid overflow-hidden rounded-3xl border border-cyan-300/20 bg-slate-950/70 shadow-2xl shadow-cyan-950/20 backdrop-blur-md lg:grid-cols-2">
+                        <div className="relative min-h-72 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(90deg, rgba(2, 6, 23, 0.05), rgba(2, 6, 23, 0.55)), url(${featuredProject.image})` }}>
+                            <span className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full border border-amber-200/50 bg-slate-950/85 px-3.5 py-2 text-xs font-bold uppercase tracking-[0.12em] text-amber-100 shadow-[0_0_20px_rgba(251,191,36,0.25)] backdrop-blur-md">
+                                <Pin className="size-3.5 text-amber-300" aria-hidden="true" />
+                                Pinned project
+                            </span>
                         </div>
-                        <ProjectActions project={featuredProject} />
-                    </div>
-                </article>
+                        <div className="p-7 sm:p-10">
+                            <p className="text-sm font-medium text-cyan-200">Featured case study · {impactByProjectId[featuredProject.id]}</p>
+                            <h3 className="mt-3 text-3xl font-bold">{featuredProject.title}</h3>
+                            <p className="mt-5 leading-7 text-slate-300">{featuredProject.description}</p>
+                            <div className="mt-6 flex flex-wrap gap-2">
+                                {featuredProject.technologies.map((technology) => <TechnologyPill key={technology.name} technology={technology} />)}
+                            </div>
+                            <ProjectActions project={featuredProject} />
+                        </div>
+                    </article>
+                )}
 
                 <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
                     {projects.map((project) => <ProjectCard key={project.id} project={project} />)}
