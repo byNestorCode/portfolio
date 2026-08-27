@@ -44,7 +44,7 @@ export default function FloatingNavbar() {
                     })}
                 </div>
 
-                <span className={`ml-auto hidden text-xs font-medium text-slate-400 transition-opacity duration-300 lg:block ${scrolled ? "opacity-0" : "opacity-100"}`}>Platform Engineer</span>
+                <span className={`ml-auto hidden text-xs font-medium text-slate-400 transition-opacity duration-300 lg:block ${scrolled ? "opacity-0" : "opacity-100"}`}>{/* Platform Engineer */}</span>
             </nav>
 
             <nav aria-label="Primary navigation" className="fixed bottom-5 left-1/2 z-50 flex w-[calc(100%-2rem)] max-w-sm -translate-x-1/2 items-center justify-around rounded-2xl border border-white/10 bg-slate-950/75 p-2 shadow-xl shadow-slate-950/30 backdrop-blur-xl md:hidden">
