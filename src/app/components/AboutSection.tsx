@@ -8,6 +8,7 @@ import {
     ShieldCheck,
     Activity,
 } from "lucide-react";
+import { Image } from "@heroui/react";
 import CountUp from "./CountUp";
 
 const capabilities = [
@@ -24,6 +25,24 @@ const specialties = [
     "Site Reliability",
     "CI/CD Automation",
     "Technical Leadership",
+];
+
+const skills = [
+    { name: "Next.js", logo: "https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1dxbfHSJFAPEGdCLU4o5B" },
+    { name: "Django", logo: "https://cdn.brandfetch.io/idnYlnDpTD/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" },
+    { name: "Docker", logo: "https://cdn.brandfetch.io/id5_eOiB6T/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" },
+    { name: "Python", logo: "https://cdn.brandfetch.io/idbpOFBgcc/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" },
+    { name: "Solana", logo: "https://cdn.brandfetch.io/ide0NUuTHO/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" },
+    { name: "Internet Computer", logo: "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiZGZpbml0eVwvZmlsZVwvQ3ZFa3Y5eFhQOGQ3dW83ZkxFMmkucG5nIn0:dfinity:WGPFvOEBt8LexZ0568duC01k5g99_6IN-Ju8n3WvJhE?width=800&format=webp&quality=100" },
+    { name: "React Native", logo: "https://cdn.brandfetch.io/idTpJSSBPD/w/400/h/400/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B" },
+    { name: "Snyk", logo: "https://cdn.brandfetch.io/id8lDQ6AMj/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" },
+    { name: "GitHub", logo: "https://cdn.brandfetch.io/idZAyF9rlg/theme/light/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1719469980826" },
+    { name: "n8n", logo: "https://cdn.brandfetch.io/idO6_6uqJ9/w/600/h/600/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B" },
+    { name: "Cloudflare", logo: "https://cdn.brandfetch.io/idJ3Cg8ymG/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1668515610854" },
+    { name: "AWS", logo: "https://cdn.brandfetch.io/idVoqFQ-78/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1691083841359" },
+    { name: "Zabbix", logo: "https://cdn.brandfetch.io/idMqLPAYOn/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1778041092273" },
+    { name: "Kubernetes", logo: "https://cdn.brandfetch.io/idJMXjfNh8/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1693285846319" },
+    { name: "Phantom", logo: "https://cdn.brandfetch.io/idf5VaJxyT/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1742483111160" },
 ];
 
 const AboutSection = () => {
@@ -77,6 +96,20 @@ const AboutSection = () => {
                             <p className="mt-2 text-sm leading-6 text-slate-400">{description}</p>
                         </article>
                     ))}
+                </div>
+
+                <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-950/60 py-4 backdrop-blur-md">
+                    <p className="px-6 pb-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Tools I work with</p>
+                    <div className="skills-marquee" aria-label="Technical skills">
+                        <div className="skills-marquee__track">
+                            {[...skills, ...skills].map((skill, index) => (
+                                <span key={`${skill.name}-${index}`} className="skills-marquee__item">
+                                    <Image alt="" aria-hidden="true" className="skills-marquee__logo" src={skill.logo} />
+                                    {skill.name}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
                 </div>
 
                 <a href="#projects" className="mt-10 inline-flex items-center gap-2 text-sm font-semibold text-cyan-200 transition hover:text-white">
