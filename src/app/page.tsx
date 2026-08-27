@@ -1,4 +1,4 @@
-import HeroSection from "./components/HeroSection";
+import HeroShowcase from "./components/HeroShowcase";
 import AboutSection from './components/AboutSection';
 import { Metadata } from 'next';
 import ProjectSection from './components/ProjectSection';
@@ -102,7 +102,7 @@ export default function Home() {
         <Background />
         <GlassmorphNavbar />
         <div className="container mx-auto px-4 relative z-10">
-          <HeroSection />
+          <HeroShowcase />
           <AboutSection />
           <ProjectSection />
         </div>
