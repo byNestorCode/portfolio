@@ -6,6 +6,7 @@ import FloatingNavbar from "./components/FloatingNavbar";
 import Providers from "./components/Providers";
 import Grainient from "./components/Grainient";
 import Background from "./components/Background";
+import SiteFooter from './components/SiteFooter';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nestorvazquez.mx/'),
@@ -105,9 +106,9 @@ export default function Home() {
           <HeroShowcase />
           <AboutSection />
           <ProjectShowcase />
+          <SiteFooter />
         </div>
       </main>
     </Providers>
   );
 }
-
