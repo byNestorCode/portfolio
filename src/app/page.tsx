@@ -2,7 +2,7 @@ import HeroShowcase from "./components/HeroShowcase";
 import AboutSection from './components/AboutSection';
 import { Metadata } from 'next';
 import ProjectShowcase from './components/ProjectShowcase';
-import GlassmorphNavbar from "./components/GlassmorphNavbar";
+import FloatingNavbar from "./components/FloatingNavbar";
 import Providers from "./components/Providers";
 import Grainient from "./components/Grainient";
 import Background from "./components/Background";
