@@ -11,7 +11,7 @@ export default function HeroShowcase() {
             <div className="grid w-full items-center gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(300px,0.85fr)] lg:gap-0">
                 <div className="order-2 max-w-3xl text-center lg:order-1 lg:text-center">
                     <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
-                        Néstor Vázquez · Mexico
+                        Néstor Vázquez · México 🇲🇽
                     </p>
                     <h1 className="text-5xl font-extrabold leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
                         Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-violet-400 to-pink-500">secure, scalable</span> cloud platforms.
