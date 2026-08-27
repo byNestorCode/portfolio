@@ -6,6 +6,7 @@ import GlassmorphNavbar from "./components/GlassmorphNavbar";
 import Providers from "./components/Providers";
 import Grainient from "./components/Grainient";
 import Background from "./components/Background";
+import SiteFooter from "./components/SiteFooter";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nestorvazquez.mx/'),
@@ -105,6 +106,7 @@ export default function Home() {
           <HeroSection />
           <AboutSection />
           <ProjectSection />
+          <SiteFooter />
         </div>
       </main>
     </Providers>
