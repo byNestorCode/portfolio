@@ -10,13 +10,13 @@ export default function HeroShowcase() {
         <section id="welcome" className="flex min-h-dvh items-center py-28 text-white sm:py-32">
             <div className="grid w-full items-center gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(300px,0.85fr)] lg:gap-0">
                 <div className="order-2 max-w-3xl text-center lg:order-1 lg:text-center">
-                    <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+                    <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300 drop-shadow-[0_0_30px_rgba(0,0,0,.70)]">
                         Néstor Vázquez · México 🇲🇽
                     </p>
-                    <h1 className="text-5xl font-extrabold leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
+                    <h1 className="text-5xl font-extrabold leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl drop-shadow-[0_0_30px_rgba(0,0,0,.70)]">
                         Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-violet-400 to-pink-500">secure, scalable</span> cloud platforms.
                     </h1>
-                    <div className="mt-6 text-xl font-medium text-slate-200 sm:text-2xl" aria-label="Professional roles">
+                    <div className="mt-6 text-xl font-medium text-slate-200 sm:text-2xl drop-shadow-[0_0_30px_rgba(0,0,0,.70)]" aria-label="Professional roles">
                         <TypeAnimation
                             sequence={["Platform Engineer", 1600, "DevSecOps Engineer", 1600, "Site Reliability Engineer", 1600]}
                             speed={55}
@@ -24,12 +24,12 @@ export default function HeroShowcase() {
                             wrapper="span"
                         />
                     </div>
-                    <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg lg:mx-auto">
+                    <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg lg:mx-auto drop-shadow-[0_0_30px_rgba(0,0,0,.70)]">
                         I design resilient infrastructure, automate delivery, and embed security into the systems engineering teams rely on every day.
                     </p>
 
                     <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-center">
-                        <a href="mailto:hola@nestorvazquez.mx?subject=Let%27s%20work%20together" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-violet-500 to-pink-500 px-6 py-3 text-sm font-bold text-slate-950 shadow-[0_0_30px_rgba(103,232,249,0.28)] transition hover:scale-[1.02] hover:shadow-[0_0_38px_rgba(167,139,250,0.4)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200">
+                        <a href="mailto:hola@nestorvazquez.mx?subject=Let%27s%20work%20together" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-violet-500 to-pink-500 px-6 py-3 text-sm font-bold text-slate-900 shadow-[0_0_30px_rgba(103,232,249,0.28)] transition hover:scale-[1.02] hover:shadow-[0_0_38px_rgba(167,139,250,0.4)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200">
                             Let&apos;s work together <ArrowUpRight className="size-4" aria-hidden="true" />
                         </a>
                         <a href="#projects" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 bg-slate-950/45 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition hover:border-cyan-200/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200">
