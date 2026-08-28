@@ -25,12 +25,10 @@
 html {
   scroll-behavior: smooth;
   background: #002e7a;
-  min-height: 100%;
 }
 
 body {
   background-color: #002e7a;
-  min-height: 100dvh;
 }
 
 section {
