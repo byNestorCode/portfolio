@@ -24,11 +24,11 @@
 
 html {
   scroll-behavior: smooth;
-  background: #002e7a;
+  /* background: #002e7a; */
 }
 
 body {
-  background-color: #002e7a;
+  /* background-color: #002e7a; */
 }
 
 section {
