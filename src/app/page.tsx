@@ -1,6 +1,6 @@
 import HeroShowcase from "./components/HeroShowcase";
 import AboutSection from './components/AboutSection';
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 import ProjectShowcase from './components/ProjectShowcase';
 import FloatingNavbar from "./components/FloatingNavbar";
 import Providers from "./components/Providers";
@@ -97,6 +97,10 @@ export const metadata: Metadata = {
     description: 'Platform Engineer specializing in DevSecOps, Site Reliability, Cloud Infrastructure, and mission-critical systems.',
     images: 'https://nestorvazquez.mx/images/og-image.png'
   }
+};
+
+export const viewport: Viewport = {
+  themeColor: "#006d8f",
 };
 
 export default function Home() {
