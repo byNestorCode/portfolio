@@ -4,8 +4,6 @@ import { Metadata, Viewport } from 'next';
 import ProjectShowcase from './components/ProjectShowcase';
 import FloatingNavbar from "./components/FloatingNavbar";
 import Providers from "./components/Providers";
-import Grainient from "./components/Grainient";
-import Background from "./components/Background";
 import SiteFooter from './components/SiteFooter';
 
 export const metadata: Metadata = {
@@ -101,15 +99,14 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#002e7a",
-  colorScheme: "light",
+  colorScheme: "dark",
   viewportFit: "cover",
 };
 
 export default function Home() {
   return (
     <Providers>
-      <main className="relative flex min-h-screen flex-col bg-transparent overflow-hidden">
-        <Background />
+      <main className="relative z-10 flex min-h-screen flex-col overflow-hidden bg-transparent">
         <FloatingNavbar />
         <div className="container mx-auto px-4 relative z-10">
           <HeroShowcase />

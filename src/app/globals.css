@@ -24,11 +24,12 @@
 
 html {
   scroll-behavior: smooth;
-  background: transparent;
+  min-height: 100%;
+  background-color: #002e7a;
 }
 
 body {
-  background: transparent;
+  min-height: 100%;
   background-color: #002e7a;
 }
 

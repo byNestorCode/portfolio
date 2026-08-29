@@ -1,14 +1,26 @@
 'use client';
+import { useEffect, useState } from "react";
 import { useIsMobile } from "../hooks/useIsMobile";
-import React from 'react'
 import Grainient from "./Grainient";
 
 function Background() {
     const isMobile = useIsMobile();
+    const [supportsWebGL2, setSupportsWebGL2] = useState(false);
+
+    useEffect(() => {
+        const canvas = document.createElement("canvas");
+        setSupportsWebGL2(Boolean(canvas.getContext("webgl2")));
+    }, []);
+
+    const showGrainient = isMobile === false && supportsWebGL2;
 
     return (
-        <div className="fixed inset-0 z-0 pointer-events-none will-change-transform">
-            {!isMobile ? (
+        <div aria-hidden="true" className="fixed inset-0 z-0 overflow-hidden  pointer-events-none">
+            {/* <div className="absolute inset-0 opacity-20" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`
+            }} /> */}
+
+            {showGrainient && (
                 <Grainient
                     color1="#006d8f"
                     color2="#002e7a"
@@ -33,15 +45,6 @@ function Background() {
                     centerY={0}
                     zoom={0.9}
                 />
-            ) : (
-                // fallback estático para mobile
-                <div className="relative w-full h-full">
-                    <div className="w-full h-full bg-gradient-to-br from-[#006d8f] via-[#002e7a] to-[#B19EEF]" />
-                    <div className="absolute inset-0 opacity-20 pointer-events-none" style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`
-                    }} />
-                </div>
-
             )}
         </div>
     );
