@@ -5,6 +5,70 @@ import ProjectTag from './ProjectTag';
 
 export const ProjectsData = [
     {
+        id: 15,
+        title: "Honey Velvet",
+        subtitle: "Creative Bakery & Specialty Coffee",
+        description: "A warm and inviting digital experience designed to showcase Honey Velvet's creative pastries, specialty coffee, New York-style cookies, and custom cakes while bringing its unique personality closer to customers.",
+        image: "/images/projects/honey-velvet.png",
+        tag: ["All", "Web"],
+        git: "https://github.com/bynestorcode",
+        site: "https://honeyvelvet.mx/",
+        technologies: [
+            {
+                name: "Next.js",
+                color: "default",
+                logo: "https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+            },
+            {
+                name: "TypeScript",
+                color: "primary",
+                logo: "https://cdn.brandfetch.io/idKX_Hb7va/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1772354699784"
+            },
+            {
+                name: "Tailwind",
+                color: "primary",
+                logo: "https://cdn.brandfetch.io/idMNEQh7-0/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1687779047045"
+            },
+            {
+                name: "Docker",
+                color: "default",
+                logo: "https://cdn.brandfetch.io/id5_eOiB6T/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1707508247180"
+            },
+        ]
+    },
+    {
+        id: 14,
+        title: "Sonora Fresnillo",
+        subtitle: "Official Music & Entertainment Platform",
+        description: "Modern digital platform designed to showcase the band's identity, music, upcoming events, and legacy while creating a direct connection between La Internacional Sonora Fresnillo and its audience.",
+        image: "/images/projects/sonora-fresnillo.png",
+        tag: ["All", "Web"],
+        git: "https://github.com/bynestorcode",
+        site: "https://sonorafresnillo.infinitynetwork.mx/",
+        technologies: [
+            {
+                name: "Next.js",
+                color: "default",
+                logo: "https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+            },
+            {
+                name: "TypeScript",
+                color: "primary",
+                logo: "https://cdn.brandfetch.io/idKX_Hb7va/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1772354699784"
+            },
+            {
+                name: "Tailwind",
+                color: "primary",
+                logo: "https://cdn.brandfetch.io/idMNEQh7-0/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1687779047045"
+            },
+            {
+                name: "Docker",
+                color: "default",
+                logo: "https://cdn.brandfetch.io/id5_eOiB6T/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1707508247180"
+            },
+        ]
+    },
+    {
         id: 13,
         title: "Voto en el Extranjero",
         subtitle: "Overseas Voting Platform",
