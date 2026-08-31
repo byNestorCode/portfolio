@@ -12,7 +12,7 @@ export const ProjectsData = [
         image: "/images/projects/10-votoextranjero.png",
         tag: ["All", "Web"],
         git: "https://github.com/ieeags",
-        site: "https://stg-votoextranjero.ieeags.mx/",
+        site: "https://votoextranjero.ieeags.mx/",
         technologies: [
             {
                 name: "Next.js",
