@@ -12,7 +12,7 @@ export const ProjectsData = [
         image: "/images/projects/honey-velvet.png",
         tag: ["All", "Web"],
         git: "https://github.com/bynestorcode",
-        site: "https://honeyvelvet.mx/",
+        site: "https://honey-velvet-dreams.lovable.app",
         technologies: [
             {
                 name: "Next.js",
