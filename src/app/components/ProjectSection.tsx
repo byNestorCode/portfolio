@@ -44,7 +44,7 @@ export const ProjectsData = [
         image: "/images/projects/sonora-fresnillo.png",
         tag: ["All", "Web"],
         git: "https://github.com/bynestorcode",
-        site: "https://sonorafresnillo.infinitynetwork.mx/",
+        site: "/",
         technologies: [
             {
                 name: "Next.js",
